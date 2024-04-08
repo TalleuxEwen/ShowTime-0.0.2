@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['core_0',['Core',['../classCore.html',1,'Core'],['../classCore.html#a14e63188e0aa7c4a6f72d5501384d1f9',1,'Core::Core()']]]
+  ['addwindow_0',['addWindow',['../classCore.html#a4160e448bc4c6455f4f443574fb73648',1,'Core']]]
 ];

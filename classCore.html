@@ -88,7 +88,149 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Core</b> ()=default</td></tr>
 <tr class="memdesc:a5057b209797afa0e0df08fd2be864164"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Core, destructor of <a class="el" href="classCore.html">Core</a> <br /></td></tr>
 <tr class="separator:a5057b209797afa0e0df08fd2be864164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc93b561dfefacfe2bcbd60604ea7a6" id="r_adcc93b561dfefacfe2bcbd60604ea7a6"><td class="memItemLeft" align="right" valign="top"><a id="adcc93b561dfefacfe2bcbd60604ea7a6" name="adcc93b561dfefacfe2bcbd60604ea7a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
+<tr class="memdesc:adcc93b561dfefacfe2bcbd60604ea7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">run, run the core <br /></td></tr>
+<tr class="separator:adcc93b561dfefacfe2bcbd60604ea7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4160e448bc4c6455f4f443574fb73648" id="r_a4160e448bc4c6455f4f443574fb73648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4160e448bc4c6455f4f443574fb73648">addWindow</a> (const std::string &amp;windowName, sf::Vector2u windowSize)</td></tr>
+<tr class="memdesc:a4160e448bc4c6455f4f443574fb73648"><td class="mdescLeft">&#160;</td><td class="mdescRight">addWindow, add a window  <br /></td></tr>
+<tr class="separator:a4160e448bc4c6455f4f443574fb73648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882b1ec6d757b6ca5611dee9c1e174b5" id="r_a882b1ec6d757b6ca5611dee9c1e174b5"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classWindow.html">Window</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a882b1ec6d757b6ca5611dee9c1e174b5">getWindow</a> (unsigned int windowId)</td></tr>
+<tr class="memdesc:a882b1ec6d757b6ca5611dee9c1e174b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWindow, get the window  <br /></td></tr>
+<tr class="separator:a882b1ec6d757b6ca5611dee9c1e174b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e00aee1c9828fc8183f8d735f14de65" id="r_a0e00aee1c9828fc8183f8d735f14de65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e00aee1c9828fc8183f8d735f14de65">removeWindow</a> (unsigned int windowId)</td></tr>
+<tr class="memdesc:a0e00aee1c9828fc8183f8d735f14de65"><td class="mdescLeft">&#160;</td><td class="mdescRight">removeWindow, remove the window  <br /></td></tr>
+<tr class="separator:a0e00aee1c9828fc8183f8d735f14de65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac586647918b97922f3817bdeccf6942a" id="r_ac586647918b97922f3817bdeccf6942a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classWindow.html">Window</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac586647918b97922f3817bdeccf6942a">getWindows</a> () const</td></tr>
+<tr class="memdesc:ac586647918b97922f3817bdeccf6942a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWindows, get the windows  <br /></td></tr>
+<tr class="separator:ac586647918b97922f3817bdeccf6942a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4160e448bc4c6455f4f443574fb73648" name="a4160e448bc4c6455f4f443574fb73648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4160e448bc4c6455f4f443574fb73648">&#9670;&#160;</a></span>addWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::addWindow </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>windowName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2u</td>          <td class="paramname"><span class="paramname"><em>windowSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>addWindow, add a window </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowName</td><td></td></tr>
+    <tr><td class="paramname">windowSize</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCore_a4160e448bc4c6455f4f443574fb73648_icgraph.png" border="0" usemap="#aclassCore_a4160e448bc4c6455f4f443574fb73648_icgraph" alt=""/></div>
+<map name="aclassCore_a4160e448bc4c6455f4f443574fb73648_icgraph" id="aclassCore_a4160e448bc4c6455f4f443574fb73648_icgraph">
+<area shape="rect" title="addWindow, add a window" alt="" coords="198,5,319,31"/>
+<area shape="rect" href="classWindow.html#ae048164a23c55ef8b0d3da0704ccadb4" title="handleEvent, handle the event" alt="" coords="5,5,150,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,150,21,150,16,182,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a882b1ec6d757b6ca5611dee9c1e174b5" name="a882b1ec6d757b6ca5611dee9c1e174b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882b1ec6d757b6ca5611dee9c1e174b5">&#9670;&#160;</a></span>getWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classWindow.html">Window</a> &gt; Core::getWindow </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>windowId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getWindow, get the window </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Window&gt; </dd></dl>
+
+</div>
+</div>
+<a id="ac586647918b97922f3817bdeccf6942a" name="ac586647918b97922f3817bdeccf6942a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac586647918b97922f3817bdeccf6942a">&#9670;&#160;</a></span>getWindows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classWindow.html">Window</a> &gt; &gt; Core::getWindows </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getWindows, get the windows </p>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;std::shared_ptr&lt;Window&gt;&gt; </dd></dl>
+
+</div>
+</div>
+<a id="a0e00aee1c9828fc8183f8d735f14de65" name="a0e00aee1c9828fc8183f8d735f14de65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e00aee1c9828fc8183f8d735f14de65">&#9670;&#160;</a></span>removeWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Core::removeWindow </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>windowId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>removeWindow, remove the window </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCore_a0e00aee1c9828fc8183f8d735f14de65_icgraph.png" border="0" usemap="#aclassCore_a0e00aee1c9828fc8183f8d735f14de65_icgraph" alt=""/></div>
+<map name="aclassCore_a0e00aee1c9828fc8183f8d735f14de65_icgraph" id="aclassCore_a0e00aee1c9828fc8183f8d735f14de65_icgraph">
+<area shape="rect" title="removeWindow, remove the window" alt="" coords="350,31,493,56"/>
+<area shape="rect" href="classWindow.html#a35055c04498121d39741bfcd5082705b" title="close, close the window" alt="" coords="198,5,302,31"/>
+<area shape="poly" title=" " alt="" coords="334,33,302,29,303,23,335,28"/>
+<area shape="rect" href="classCore.html#adcc93b561dfefacfe2bcbd60604ea7a6" title="run, run the core" alt="" coords="214,55,286,80"/>
+<area shape="poly" title=" " alt="" coords="335,58,287,65,286,60,334,53"/>
+<area shape="rect" href="classWindow.html#ae048164a23c55ef8b0d3da0704ccadb4" title="handleEvent, handle the event" alt="" coords="5,5,150,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,150,21,150,16,182,16"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/core/<a class="el" href="Core_8hpp_source.html">Core.hpp</a></li>
 <li>src/core/<b>Core.cpp</b></li>

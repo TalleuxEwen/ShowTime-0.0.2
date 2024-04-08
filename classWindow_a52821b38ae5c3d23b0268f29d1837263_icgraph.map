@@ -1,0 +1,5 @@
+<map id="Window::pollEvent" name="Window::pollEvent">
+<area shape="rect" id="Node000001" title="pollEvent, poll the event" alt="" coords="198,5,324,31"/>
+<area shape="rect" id="Node000002" href="$classWindow.html#ae048164a23c55ef8b0d3da0704ccadb4" title="handleEvent, handle the event" alt="" coords="5,5,150,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,21,150,21,150,16,182,16"/>
+</map>

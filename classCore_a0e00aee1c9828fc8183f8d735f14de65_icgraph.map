@@ -1,0 +1,9 @@
+<map id="Core::removeWindow" name="Core::removeWindow">
+<area shape="rect" id="Node000001" title="removeWindow, remove the window" alt="" coords="350,31,493,56"/>
+<area shape="rect" id="Node000002" href="$classWindow.html#a35055c04498121d39741bfcd5082705b" title="close, close the window" alt="" coords="198,5,302,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,33,302,29,303,23,335,28"/>
+<area shape="rect" id="Node000004" href="$classCore.html#adcc93b561dfefacfe2bcbd60604ea7a6" title="run, run the core" alt="" coords="214,55,286,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="335,58,287,65,286,60,334,53"/>
+<area shape="rect" id="Node000003" href="$classWindow.html#ae048164a23c55ef8b0d3da0704ccadb4" title="handleEvent, handle the event" alt="" coords="5,5,150,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,21,150,21,150,16,182,16"/>
+</map>

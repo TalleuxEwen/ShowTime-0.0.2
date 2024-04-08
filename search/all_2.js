@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7ecore_0',['~Core',['../classCore.html#a5057b209797afa0e0df08fd2be864164',1,'Core']]],
-  ['_7ewindow_1',['~Window',['../classWindow.html#adc361d2d83c3531576b0d7bc1589cdfb',1,'Window']]]
+  ['display_0',['display',['../classWindow.html#afadfafa5a0b9472554759004aafb327e',1,'Window']]],
+  ['drawcomponents_1',['drawComponents',['../classWindow.html#a09e6feca2425e7f3426b8a2d5283b3cb',1,'Window']]]
 ];
