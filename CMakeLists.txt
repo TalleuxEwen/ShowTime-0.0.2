@@ -19,7 +19,11 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(PULSEAUDIO_SIMPLE REQUIRED libpulse-simple)
 
 add_executable(ShowTime_0_0_2
-        src/main.cpp)
+        src/main.cpp
+        src/core/Core.cpp
+        src/core/Core.hpp
+        src/graphic/Window.cpp
+        src/graphic/Window.hpp)
 
 target_link_libraries(ShowTime_0_0_2 sfml-graphics sfml-window sfml-system)
 target_link_libraries(ShowTime_0_0_2 )
