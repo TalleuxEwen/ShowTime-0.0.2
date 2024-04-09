@@ -6,6 +6,7 @@
 #include "../core/Core.hpp"
 
 #include <utility>
+#include <iostream>
 
 Window::Window(Core *core, std::string windowName, sf::Vector2u windowSize)
 {
@@ -26,6 +27,13 @@ Window::Window(Core *core, std::string windowName, sf::Vector2u windowSize)
     //setWindowMouseStyle(_windowMouseStyle);
     setWindowPosition(_windowPosition);
     setWindowSize(_windowSize);
+
+    sf::Image icon;
+    if (!icon.loadFromFile("assets/icon.png")) {
+        std::cerr << "Error: could not load icon.png" << std::endl;
+    } else {
+        _renderWindow->setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
+    }
 
     _core = core;
 }

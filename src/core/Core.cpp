@@ -6,7 +6,7 @@
 
 Core::Core()
 {
-    _windows.push_back(std::make_shared<Window>(this, "ShowTime 0.0.2", sf::Vector2u(800, 600)));
+    _windows.push_back(std::make_shared<Window>(this, "ShowTime 0.0.2", sf::Vector2u(1920, 1080)));
 
 }
 
