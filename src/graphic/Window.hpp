@@ -9,6 +9,8 @@
 
 class Core;
 
+class IScene;
+
 class Window
 {
     public:
