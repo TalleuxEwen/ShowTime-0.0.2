@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['pollevent_0',['pollEvent',['../classWindow.html#a52821b38ae5c3d23b0268f29d1837263',1,'Window']]]
+  ['icomponent_0',['IComponent',['../classIComponent.html',1,'IComponent'],['../classIComponent.html#a5bf086670aca6c873104b36550f74d71',1,'IComponent::IComponent()']]],
+  ['iscene_1',['IScene',['../classIScene.html',1,'IScene'],['../classIScene.html#a70cbf2f63093439fea5789573157a184',1,'IScene::IScene()']]],
+  ['isopen_2',['isOpen',['../classWindow.html#a761d614931fb5a5daa70e4f580c3e78e',1,'Window']]]
 ];

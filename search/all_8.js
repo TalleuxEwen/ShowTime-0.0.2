@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['setwindowevent_0',['setWindowEvent',['../classWindow.html#a86cbcd14b4c8020b108d39621f051346',1,'Window']]],
-  ['setwindowframeratelimit_1',['setWindowFramerateLimit',['../classWindow.html#a8acdd8d32fe33fd8268c9f1dba88c63a',1,'Window']]],
-  ['setwindowid_2',['setWindowId',['../classWindow.html#aaa59d77fc1e36fa27566b10aefc190b5',1,'Window']]],
-  ['setwindowmousecursorvisible_3',['setWindowMouseCursorVisible',['../classWindow.html#a8d4fafbe5699a73ebe0cc8f602700451',1,'Window']]],
-  ['setwindowmousestyle_4',['setWindowMouseStyle',['../classWindow.html#a582845364ef90c8e64a537b1364931cc',1,'Window']]],
-  ['setwindowname_5',['setWindowName',['../classWindow.html#a6bbcba9459ec8ce4ba96a3d42594782a',1,'Window']]],
-  ['setwindowposition_6',['setWindowPosition',['../classWindow.html#a5c3a7579b042d7f26e5ea45dec5c28d7',1,'Window']]],
-  ['setwindowsize_7',['setWindowSize',['../classWindow.html#a45e15576032d57f5cea3426fd21727a4',1,'Window']]],
-  ['setwindowverticalsyncenabled_8',['setWindowVerticalSyncEnabled',['../classWindow.html#a524c5970d3d670b226f744240bb3f5df',1,'Window']]]
+  ['removewindow_0',['removeWindow',['../classCore.html#a0e00aee1c9828fc8183f8d735f14de65',1,'Core']]],
+  ['resume_1',['resume',['../classAComponent.html#abc8955eed54ad1c8fa90aa031e0fdf31',1,'AComponent::resume()'],['../classIComponent.html#ad07cfbedc3dca466907bb71de58ade8d',1,'IComponent::resume()']]],
+  ['resumescene_2',['resumeScene',['../classAScene.html#a52a5fdd3b7e64a229431c940492f9722',1,'AScene::resumeScene()'],['../classIScene.html#aa403c32d1a454e80d7efd8968653712f',1,'IScene::resumeScene()']]],
+  ['run_3',['run',['../classCore.html#adcc93b561dfefacfe2bcbd60604ea7a6',1,'Core']]]
 ];
