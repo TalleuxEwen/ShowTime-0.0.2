@@ -23,7 +23,13 @@ add_executable(ShowTime_0_0_2
         src/core/Core.cpp
         src/core/Core.hpp
         src/graphic/Window.cpp
-        src/graphic/Window.hpp)
+        src/graphic/Window.hpp
+        src/graphic/Scenes/IScene.hpp
+        src/graphic/Scenes/AScene.cpp
+        src/graphic/Scenes/AScene.hpp
+        src/graphic/Components/IComponent.hpp
+        src/graphic/Components/AComponent.cpp
+        src/graphic/Components/AComponent.hpp)
 
 target_link_libraries(ShowTime_0_0_2 sfml-graphics sfml-window sfml-system)
 target_link_libraries(ShowTime_0_0_2 )
