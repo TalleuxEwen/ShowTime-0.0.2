@@ -1,0 +1,9 @@
+<map id="LoadScene" name="LoadScene">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,244,93,270"/>
+<area shape="rect" id="Node000002" href="$classAScene.html" title=" " alt="" coords="15,169,83,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,210,52,244,46,244,46,210"/>
+<area shape="rect" id="Node000003" href="$classIScene.html" title=" " alt="" coords="18,94,80,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,135,52,169,46,169,46,135"/>
+<area shape="rect" id="Node000004" href="$classCore.html" title=" " alt="" coords="25,5,73,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="52,47,52,94,46,94,46,47"/>
+</map>

@@ -73,10 +73,21 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classWindow-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Window Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for Window:</div>
+<div class="dyncontent">
+<div class="center"><img src="classWindow__coll__graph.png" border="0" usemap="#aWindow_coll__map" alt="Collaboration graph"/></div>
+<map name="aWindow_coll__map" id="aWindow_coll__map">
+<area shape="rect" title=" " alt="" coords="5,94,73,120"/>
+<area shape="rect" href="classCore.html" title=" " alt="" coords="15,5,63,31"/>
+<area shape="poly" title=" " alt="" coords="42,47,42,94,36,94,36,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -110,16 +121,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>display</b> ()</td></
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> ()</td></tr>
 <tr class="memdesc:ae048164a23c55ef8b0d3da0704ccadb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">handleEvent, handle the event <br /></td></tr>
 <tr class="separator:ae048164a23c55ef8b0d3da0704ccadb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e6feca2425e7f3426b8a2d5283b3cb" id="r_a09e6feca2425e7f3426b8a2d5283b3cb"><td class="memItemLeft" align="right" valign="top"><a id="a09e6feca2425e7f3426b8a2d5283b3cb" name="a09e6feca2425e7f3426b8a2d5283b3cb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drawComponents</b> ()</td></tr>
-<tr class="memdesc:a09e6feca2425e7f3426b8a2d5283b3cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawComponents, draw components <br /></td></tr>
-<tr class="separator:a09e6feca2425e7f3426b8a2d5283b3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372003ab556534d2a13e5f47beaed5f0" id="r_a372003ab556534d2a13e5f47beaed5f0"><td class="memItemLeft" align="right" valign="top"><a id="a372003ab556534d2a13e5f47beaed5f0" name="a372003ab556534d2a13e5f47beaed5f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drawScene</b> ()</td></tr>
+<tr class="memdesc:a372003ab556534d2a13e5f47beaed5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawComponents, draw components <br /></td></tr>
+<tr class="separator:a372003ab556534d2a13e5f47beaed5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a262fcb08c2947d78462511d6a34a409d" id="r_a262fcb08c2947d78462511d6a34a409d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a262fcb08c2947d78462511d6a34a409d">getWindowId</a> () const</td></tr>
 <tr class="memdesc:a262fcb08c2947d78462511d6a34a409d"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWindowId, get the window id  <br /></td></tr>
 <tr class="separator:a262fcb08c2947d78462511d6a34a409d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28c5a3ed54f2bd5cc45a1329e06618e0" id="r_a28c5a3ed54f2bd5cc45a1329e06618e0"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28c5a3ed54f2bd5cc45a1329e06618e0">getRenderWindow</a> () const</td></tr>
-<tr class="memdesc:a28c5a3ed54f2bd5cc45a1329e06618e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCurrentScene, get the current scene  <br /></td></tr>
-<tr class="separator:a28c5a3ed54f2bd5cc45a1329e06618e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add75a8c4f31b9f04ef9e8665b1237365" id="r_add75a8c4f31b9f04ef9e8665b1237365"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add75a8c4f31b9f04ef9e8665b1237365">getCurrentScene</a> () const</td></tr>
+<tr class="memdesc:add75a8c4f31b9f04ef9e8665b1237365"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCurrentScene, get the current scene  <br /></td></tr>
+<tr class="separator:add75a8c4f31b9f04ef9e8665b1237365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa044e7be5a393fad649cf6e5009a1478" id="r_aa044e7be5a393fad649cf6e5009a1478"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa044e7be5a393fad649cf6e5009a1478">getScenePool</a> () const</td></tr>
+<tr class="memdesc:aa044e7be5a393fad649cf6e5009a1478"><td class="mdescLeft">&#160;</td><td class="mdescRight">getScenePool, get the scene pool  <br /></td></tr>
+<tr class="separator:aa044e7be5a393fad649cf6e5009a1478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cfacff351bb38403a6fa9cdd6f85e5" id="r_aa4cfacff351bb38403a6fa9cdd6f85e5"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4cfacff351bb38403a6fa9cdd6f85e5">getRenderWindow</a> ()</td></tr>
+<tr class="memdesc:aa4cfacff351bb38403a6fa9cdd6f85e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRenderWindow, get the render window  <br /></td></tr>
+<tr class="separator:aa4cfacff351bb38403a6fa9cdd6f85e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0e421b2641c91f7813cedd9cfef469" id="r_a3f0e421b2641c91f7813cedd9cfef469"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f0e421b2641c91f7813cedd9cfef469">getSceneByName</a> (std::string name)</td></tr>
+<tr class="memdesc:a3f0e421b2641c91f7813cedd9cfef469"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCore, get the core  <br /></td></tr>
+<tr class="separator:a3f0e421b2641c91f7813cedd9cfef469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6edc606df4680a93ed47016204166615" id="r_a6edc606df4680a93ed47016204166615"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6edc606df4680a93ed47016204166615">getWindowName</a> () const</td></tr>
 <tr class="memdesc:a6edc606df4680a93ed47016204166615"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWindowName, get the window name  <br /></td></tr>
 <tr class="separator:a6edc606df4680a93ed47016204166615"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,16 +191,74 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawComponents</b> ()
 <tr class="memitem:a582845364ef90c8e64a537b1364931cc" id="r_a582845364ef90c8e64a537b1364931cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a582845364ef90c8e64a537b1364931cc">setWindowMouseStyle</a> (sf::Cursor::Type windowMouseStyle)</td></tr>
 <tr class="memdesc:a582845364ef90c8e64a537b1364931cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">setWindowMouseStyle, set the window mouse style  <br /></td></tr>
 <tr class="separator:a582845364ef90c8e64a537b1364931cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a62e507d8d746c527b7b9898af3f72e24" id="r_a62e507d8d746c527b7b9898af3f72e24"><td class="memItemLeft" align="right" valign="top"><a id="a62e507d8d746c527b7b9898af3f72e24" name="a62e507d8d746c527b7b9898af3f72e24"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_windowId</b></td></tr>
+<tr class="memdesc:a62e507d8d746c527b7b9898af3f72e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowId, window id <br /></td></tr>
+<tr class="separator:a62e507d8d746c527b7b9898af3f72e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf27caef3f805453358c875794e507c7" id="r_acf27caef3f805453358c875794e507c7"><td class="memItemLeft" align="right" valign="top"><a id="acf27caef3f805453358c875794e507c7" name="acf27caef3f805453358c875794e507c7"></a>
+std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_currentScene</b></td></tr>
+<tr class="memdesc:acf27caef3f805453358c875794e507c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">_currentScene, current scene <br /></td></tr>
+<tr class="separator:acf27caef3f805453358c875794e507c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e1a0c8764ccc4486187bdf7ce2aa91" id="r_a02e1a0c8764ccc4486187bdf7ce2aa91"><td class="memItemLeft" align="right" valign="top"><a id="a02e1a0c8764ccc4486187bdf7ce2aa91" name="a02e1a0c8764ccc4486187bdf7ce2aa91"></a>
+std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_scenePool</b></td></tr>
+<tr class="memdesc:a02e1a0c8764ccc4486187bdf7ce2aa91"><td class="mdescLeft">&#160;</td><td class="mdescRight">_scenePool, scene pool <br /></td></tr>
+<tr class="separator:a02e1a0c8764ccc4486187bdf7ce2aa91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a04ef3e06aac69fdc586f1897a91709" id="r_a8a04ef3e06aac69fdc586f1897a91709"><td class="memItemLeft" align="right" valign="top"><a id="a8a04ef3e06aac69fdc586f1897a91709" name="a8a04ef3e06aac69fdc586f1897a91709"></a>
+sf::RenderWindow&#160;</td><td class="memItemRight" valign="bottom"><b>_renderWindow</b></td></tr>
+<tr class="memdesc:a8a04ef3e06aac69fdc586f1897a91709"><td class="mdescLeft">&#160;</td><td class="mdescRight">_renderWindow, render window <br /></td></tr>
+<tr class="separator:a8a04ef3e06aac69fdc586f1897a91709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4410c9d42205057285884d24f43b6835" id="r_a4410c9d42205057285884d24f43b6835"><td class="memItemLeft" align="right" valign="top"><a id="a4410c9d42205057285884d24f43b6835" name="a4410c9d42205057285884d24f43b6835"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_windowName</b></td></tr>
+<tr class="memdesc:a4410c9d42205057285884d24f43b6835"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowName, window name <br /></td></tr>
+<tr class="separator:a4410c9d42205057285884d24f43b6835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b923ff7ad8c5776b1564e13348fe143" id="r_a5b923ff7ad8c5776b1564e13348fe143"><td class="memItemLeft" align="right" valign="top"><a id="a5b923ff7ad8c5776b1564e13348fe143" name="a5b923ff7ad8c5776b1564e13348fe143"></a>
+sf::Vector2u&#160;</td><td class="memItemRight" valign="bottom"><b>_windowSize</b></td></tr>
+<tr class="memdesc:a5b923ff7ad8c5776b1564e13348fe143"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowSize, window size <br /></td></tr>
+<tr class="separator:a5b923ff7ad8c5776b1564e13348fe143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14158c5fd15ef3191071c47390cc4d1f" id="r_a14158c5fd15ef3191071c47390cc4d1f"><td class="memItemLeft" align="right" valign="top"><a id="a14158c5fd15ef3191071c47390cc4d1f" name="a14158c5fd15ef3191071c47390cc4d1f"></a>
+sf::Vector2i&#160;</td><td class="memItemRight" valign="bottom"><b>_windowPosition</b></td></tr>
+<tr class="memdesc:a14158c5fd15ef3191071c47390cc4d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowPosition, window position <br /></td></tr>
+<tr class="separator:a14158c5fd15ef3191071c47390cc4d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a99794fcef9757b560018dd2a48c0d1" id="r_a9a99794fcef9757b560018dd2a48c0d1"><td class="memItemLeft" align="right" valign="top"><a id="a9a99794fcef9757b560018dd2a48c0d1" name="a9a99794fcef9757b560018dd2a48c0d1"></a>
+sf::Event&#160;</td><td class="memItemRight" valign="bottom"><b>_windowEvent</b> {}</td></tr>
+<tr class="memdesc:a9a99794fcef9757b560018dd2a48c0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowEvent, window event <br /></td></tr>
+<tr class="separator:a9a99794fcef9757b560018dd2a48c0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c17d8679a36c925a3f6abd02d5804e" id="r_ae8c17d8679a36c925a3f6abd02d5804e"><td class="memItemLeft" align="right" valign="top"><a id="ae8c17d8679a36c925a3f6abd02d5804e" name="ae8c17d8679a36c925a3f6abd02d5804e"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_windowFramerateLimit</b> {}</td></tr>
+<tr class="memdesc:ae8c17d8679a36c925a3f6abd02d5804e"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowFramerateLimit, window framerate limit <br /></td></tr>
+<tr class="separator:ae8c17d8679a36c925a3f6abd02d5804e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d832441689c9d26b758d6f6dedb263" id="r_a22d832441689c9d26b758d6f6dedb263"><td class="memItemLeft" align="right" valign="top"><a id="a22d832441689c9d26b758d6f6dedb263" name="a22d832441689c9d26b758d6f6dedb263"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_windowVerticalSyncEnabled</b> {}</td></tr>
+<tr class="memdesc:a22d832441689c9d26b758d6f6dedb263"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowVerticalSyncEnabled, window vertical sync enabled <br /></td></tr>
+<tr class="separator:a22d832441689c9d26b758d6f6dedb263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1676ae0d78847115fa9d22824335e0f" id="r_ab1676ae0d78847115fa9d22824335e0f"><td class="memItemLeft" align="right" valign="top"><a id="ab1676ae0d78847115fa9d22824335e0f" name="ab1676ae0d78847115fa9d22824335e0f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_windowMouseCursorVisible</b> {}</td></tr>
+<tr class="memdesc:ab1676ae0d78847115fa9d22824335e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowMouseCursorVisible, window mouse cursor visible <br /></td></tr>
+<tr class="separator:ab1676ae0d78847115fa9d22824335e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa91f387d58b1a89f70f0cb86cc146d4" id="r_afa91f387d58b1a89f70f0cb86cc146d4"><td class="memItemLeft" align="right" valign="top"><a id="afa91f387d58b1a89f70f0cb86cc146d4" name="afa91f387d58b1a89f70f0cb86cc146d4"></a>
+sf::Cursor::Type&#160;</td><td class="memItemRight" valign="bottom"><b>_windowMouseStyle</b></td></tr>
+<tr class="memdesc:afa91f387d58b1a89f70f0cb86cc146d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">_windowMouseStyle, window mouse style <br /></td></tr>
+<tr class="separator:afa91f387d58b1a89f70f0cb86cc146d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04694e82fa42ba1d8878b482f65cd7f" id="r_aa04694e82fa42ba1d8878b482f65cd7f"><td class="memItemLeft" align="right" valign="top"><a id="aa04694e82fa42ba1d8878b482f65cd7f" name="aa04694e82fa42ba1d8878b482f65cd7f"></a>
+<a class="el" href="classCore.html">Core</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_core</b></td></tr>
+<tr class="memdesc:aa04694e82fa42ba1d8878b482f65cd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">_core, core <br /></td></tr>
+<tr class="separator:aa04694e82fa42ba1d8878b482f65cd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578ff7b50e765097be145615cf726afd" id="r_a578ff7b50e765097be145615cf726afd"><td class="memItemLeft" align="right" valign="top"><a id="a578ff7b50e765097be145615cf726afd" name="a578ff7b50e765097be145615cf726afd"></a>
+sf::RectangleShape *&#160;</td><td class="memItemRight" valign="bottom"><b>_background</b></td></tr>
+<tr class="separator:a578ff7b50e765097be145615cf726afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a28c5a3ed54f2bd5cc45a1329e06618e0" name="a28c5a3ed54f2bd5cc45a1329e06618e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28c5a3ed54f2bd5cc45a1329e06618e0">&#9670;&#160;</a></span>getRenderWindow()</h2>
+<a id="add75a8c4f31b9f04ef9e8665b1237365" name="add75a8c4f31b9f04ef9e8665b1237365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add75a8c4f31b9f04ef9e8665b1237365">&#9670;&#160;</a></span>getCurrentScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">sf::RenderWindow * Window::getRenderWindow </td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt; Window::getCurrentScene </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -189,9 +267,77 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drawComponents</b> ()
 </div><div class="memdoc">
 
 <p>getCurrentScene, get the current scene </p>
-<dl class="section return"><dt>Returns</dt><dd>the current scene</dd></dl>
-<p>getScenePool, get the scene pool </p><dl class="section return"><dt>Returns</dt><dd>the scene pool</dd></dl>
-<p>getRenderWindow, get the render window </p><dl class="section return"><dt>Returns</dt><dd>the render window </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the current scene </dd></dl>
+
+</div>
+</div>
+<a id="aa4cfacff351bb38403a6fa9cdd6f85e5" name="aa4cfacff351bb38403a6fa9cdd6f85e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4cfacff351bb38403a6fa9cdd6f85e5">&#9670;&#160;</a></span>getRenderWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::RenderWindow &amp; Window::getRenderWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getRenderWindow, get the render window </p>
+<dl class="section return"><dt>Returns</dt><dd>the render window </dd></dl>
+
+</div>
+</div>
+<a id="a3f0e421b2641c91f7813cedd9cfef469" name="a3f0e421b2641c91f7813cedd9cfef469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0e421b2641c91f7813cedd9cfef469">&#9670;&#160;</a></span>getSceneByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt; Window::getSceneByName </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getCore, get the core </p>
+<dl class="section return"><dt>Returns</dt><dd>the core </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph.png" border="0" usemap="#aclassWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph" alt=""/></div>
+<map name="aclassWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph" id="aclassWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph">
+<area shape="rect" title="getCore, get the core" alt="" coords="173,5,351,31"/>
+<area shape="rect" href="classWindow.html#a708f4ab2e1ada1cdf6e13390e5dd2501" title="Window, constructor of Window." alt="" coords="5,5,125,31"/>
+<area shape="poly" title=" " alt="" coords="157,21,125,21,125,16,157,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa044e7be5a393fad649cf6e5009a1478" name="aa044e7be5a393fad649cf6e5009a1478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa044e7be5a393fad649cf6e5009a1478">&#9670;&#160;</a></span>getScenePool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="classIScene.html">IScene</a> &gt; &gt; Window::getScenePool </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getScenePool, get the scene pool </p>
+<dl class="section return"><dt>Returns</dt><dd>the scene pool </dd></dl>
 
 </div>
 </div>

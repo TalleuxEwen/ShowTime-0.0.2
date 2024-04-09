@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_0',['Window',['../classWindow.html',1,'']]]
+  ['loadscene_0',['LoadScene',['../classLoadScene.html',1,'']]]
 ];

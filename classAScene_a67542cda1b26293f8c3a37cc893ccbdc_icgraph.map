@@ -1,0 +1,7 @@
+<map id="AScene::addComponent" name="AScene::addComponent">
+<area shape="rect" id="Node000001" title="addComponent, add a component" alt="" coords="408,5,568,31"/>
+<area shape="rect" id="Node000002" href="$classLoadScene.html#a2a1876b067797d0d0c57353c7041d575" title="initScene, init the scene" alt="" coords="213,5,360,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="392,21,360,21,360,16,392,16"/>
+<area shape="rect" id="Node000003" href="$classLoadScene.html#a2cd44c3850ceddf26ce228a760005cd1" title="LoadScene, constructor of LoadScene." alt="" coords="5,5,165,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,21,165,21,165,16,197,16"/>
+</map>

@@ -1,5 +1,7 @@
 <map id="AComponent" name="AComponent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,102,105"/>
-<area shape="rect" id="Node000002" href="$classIComponent.html" title=" " alt="" coords="8,5,99,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,46,56,79,51,79,51,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="18,79,114,105"/>
+<area shape="rect" id="Node000003" href="$classSpriteComponent.html" title=" " alt="" coords="5,153,127,178"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="69,120,69,152,63,152,63,120"/>
+<area shape="rect" id="Node000002" href="$classIComponent.html" title=" " alt="" coords="20,5,112,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,46,69,79,63,79,63,46"/>
 </map>
