@@ -18,6 +18,8 @@ FetchContent_MakeAvailable(SFML)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(PULSEAUDIO_SIMPLE REQUIRED libpulse-simple)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
 add_executable(ShowTime_0_0_2
         src/main.cpp
         src/core/Core.cpp
@@ -29,7 +31,11 @@ add_executable(ShowTime_0_0_2
         src/graphic/Scenes/AScene.hpp
         src/graphic/Components/IComponent.hpp
         src/graphic/Components/AComponent.cpp
-        src/graphic/Components/AComponent.hpp)
+        src/graphic/Components/AComponent.hpp
+        src/graphic/Components/SpriteComponent/SpriteComponent.cpp
+        src/graphic/Components/SpriteComponent/SpriteComponent.hpp
+        src/graphic/Scenes/LoadScene/LoadScene.cpp
+        src/graphic/Scenes/LoadScene/LoadScene.hpp)
 
 target_link_libraries(ShowTime_0_0_2 sfml-graphics sfml-window sfml-system)
 target_link_libraries(ShowTime_0_0_2 )

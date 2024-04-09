@@ -6,7 +6,7 @@
 
 #include <memory>
 #include "../../core/Core.hpp"
-#include "../Components/IComponent.hpp"
+#include "../Components/SpriteComponent/SpriteComponent.hpp"
 
 class IScene
 {
@@ -57,10 +57,6 @@ class IScene
         virtual void resumeScene() = 0;
 
     private:
-        /**
-         * @brief _core, core
-         */
-        Core *_core;
 
         /**
          * @brief _isPaused, is paused
@@ -72,4 +68,9 @@ class IScene
          * @brief _components, components
          */
         std::vector<std::shared_ptr<IComponent>> _components{};
+
+        /**
+         * @brief _core, core
+         */
+        Core *_core;
 };
