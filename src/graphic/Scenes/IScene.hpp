@@ -7,6 +7,8 @@
 #include <memory>
 #include "../../core/Core.hpp"
 #include "../Components/SpriteComponent/SpriteComponent.hpp"
+#include "../Components/VueMeterComponent/VueMeterComponent.hpp"
+#include "../Components/TimerComponent/TimerComponent.hpp"
 
 class IScene
 {

@@ -62,6 +62,16 @@ class Window
          */
         void drawScene();
 
+        /**
+         * @brief update, update the window
+         */
+        void update();
+
+        /**
+         * @brief changeScene, change the scene
+         */
+        void changeScene(std::string sceneName);
+
         // Getters
         /**
          * @brief getWindowId, get the window id
@@ -269,7 +279,9 @@ class Window
              */
             Core *_core;
 
-            sf::RectangleShape *_background;
-
+            /**
+             * @brief _newScene, new scene
+             */
+             std::string _newScene;
 
 };

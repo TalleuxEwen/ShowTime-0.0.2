@@ -27,7 +27,7 @@ class AComponent : public IComponent
         /**
          * @brief handleEvent, handle the event
          */
-        void handleEvent(const sf::Event &event, sf::RenderWindow &window) override;
+        void handleEvent(const sf::Event &event, sf::RenderWindow &window, IComponent *parentComponent) override;
 
         /**
          * @brief update, update the component
@@ -53,5 +53,55 @@ class AComponent : public IComponent
           * @brief getSubComponents, get all the sub components
           */
          std::vector<std::shared_ptr<IComponent>> getSubComponents() override;
+
+         /**
+          * @brief setAttribute, set the attribute
+          */
+         void setAttribute(const std::string &attribute) override;
+
+         /**
+          * @brief getAttribute, get the attribute
+          */
+         std::string getAttribute() const override;
+
+         /**
+          * @brief setPosition, set the position
+          */
+         void setPosition(const sf::Vector2f &position) override;
+
+         /**
+          * @brief getPosition, get the position
+          */
+         sf::Vector2f getPosition() const override;
+
+         /**
+          * @brief setSize, set the size
+          */
+         void setSize(const sf::Vector2f &size) override;
+
+         /**
+          * @brief getSize, get the size
+          */
+         sf::Vector2f getSize() const override;
+
+         /**
+          * @brief setHeight, set the height
+          */
+         void setHeight(float height) override;
+
+         /**
+          * @brief getHeight, get the height
+          */
+         float getHeight() const override;
+
+         /**
+          * @brief setWidth, set the width
+          */
+         void setWidth(float width) override;
+
+         /**
+          * @brief getWidth, get the width
+          */
+         float getWidth() const override;
 
 };

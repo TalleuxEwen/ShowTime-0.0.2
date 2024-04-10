@@ -35,7 +35,7 @@ class IComponent
         /**
          * @brief handleEvent, handle the event
          */
-        virtual void handleEvent(const sf::Event &event, sf::RenderWindow &window) = 0;
+        virtual void handleEvent(const sf::Event &event, sf::RenderWindow &window, IComponent *parentComponent) = 0;
 
         /**
          * @brief pause, pause the component
@@ -57,15 +57,89 @@ class IComponent
          */
         virtual std::vector<std::shared_ptr<IComponent>> getSubComponents() = 0;
 
-    private:
         /**
-         * @brief _core, the core
+         * @brief setAttribute, set the attribute
          */
-        Core *_core;
+        virtual void setAttribute(const std::string &attribute) = 0;
+
+        /**
+         * @brief getAttribute, get the attribute
+         */
+        virtual std::string getAttribute() const = 0;
+
+        /**
+         * @brief setPosition, set the position
+         */
+        virtual void setPosition(const sf::Vector2f &position) = 0;
+
+        /**
+         * @brief getPosition, get the position
+         */
+        virtual sf::Vector2f getPosition() const = 0;
+
+        /**
+         * @brief setSize, set the size
+         */
+        virtual void setSize(const sf::Vector2f &size) = 0;
+
+        /**
+         * @brief getSize, get the size
+         */
+        virtual sf::Vector2f getSize() const = 0;
+
+        /**
+         * @brief setHeight, set the height
+         */
+        virtual void setHeight(float height) = 0;
+
+        /**
+         * @brief getHeight, get the height
+         */
+        virtual float getHeight() const = 0;
+
+        /**
+         * @brief setWidth, set the width
+         */
+        virtual void setWidth(float width) = 0;
+
+        /**
+         * @brief getWidth, get the width
+         */
+        virtual float getWidth() const = 0;
 
     protected:
         /**
          * @brief _subComponents, the sub components
          */
         std::vector<std::shared_ptr<IComponent>> _subComponents;
+
+        /**
+         * @brief _core, the core
+         */
+        Core *_core;
+
+        /**
+         * @brief _attribute, the attribute
+         */
+        std::string _attribute;
+
+        /**
+        * @brief _position, the position
+        */
+        sf::Vector2f _position{0, 0};
+
+        /**
+         * @brief _size, the size
+         */
+        sf::Vector2f _size{1, 1};
+
+    /**
+     * @brief height, the height
+     */
+        float _height = 1080;
+
+    /**
+     * @brief width, the width
+     */
+    float _width = 1920;
 };

@@ -76,18 +76,29 @@ void Window::handleEvent()
         if (_windowEvent.type == sf::Event::Closed)
             close();
 
-        if (_windowEvent.type == sf::Event::KeyPressed)
-        {
-            if (_windowEvent.key.code == sf::Keyboard::Space)
-                _core->addWindow("Window", sf::Vector2u(800, 600));
-
-        }
+        _currentScene->handleEvent(_windowEvent, _renderWindow);
     }
 }
 
 void Window::drawScene()
 {
     _currentScene->display(_renderWindow);
+}
+
+void Window::update()
+{
+    _currentScene->update();
+}
+
+void Window::changeScene(std::string sceneName)
+{
+    auto scene = getSceneByName(sceneName);
+    if (scene == nullptr)
+    {
+        std::cerr << "Error: could not find scene " << sceneName << std::endl;
+        return;
+    }
+    _currentScene = getSceneByName(std::move(sceneName));
 }
 
 //getters

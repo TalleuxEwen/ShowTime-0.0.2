@@ -31,7 +31,7 @@ void AScene::update()
 void AScene::handleEvent(const sf::Event &event, sf::RenderWindow &window)
 {
     for (auto &component : _components) {
-        component->handleEvent(event, window);
+        component->handleEvent(event, window, nullptr);
     }
 }
 

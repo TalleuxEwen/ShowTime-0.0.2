@@ -35,7 +35,13 @@ add_executable(ShowTime_0_0_2
         src/graphic/Components/SpriteComponent/SpriteComponent.cpp
         src/graphic/Components/SpriteComponent/SpriteComponent.hpp
         src/graphic/Scenes/LoadScene/LoadScene.cpp
-        src/graphic/Scenes/LoadScene/LoadScene.hpp)
+        src/graphic/Scenes/LoadScene/LoadScene.hpp
+        src/graphic/Components/VueMeterComponent/VueMeterComponent.cpp
+        src/graphic/Components/VueMeterComponent/VueMeterComponent.hpp
+        src/graphic/Components/TimerComponent/TimerComponent.cpp
+        src/graphic/Components/TimerComponent/TimerComponent.hpp
+        src/graphic/Scenes/MainScene/MainScene.cpp
+        src/graphic/Scenes/MainScene/MainScene.hpp)
 
 target_link_libraries(ShowTime_0_0_2 sfml-graphics sfml-window sfml-system)
 target_link_libraries(ShowTime_0_0_2 )

@@ -59,6 +59,12 @@ class SpriteComponent : public AComponent
          */
         void setOrigin(sf::Vector2f origin);
 
+        /**
+         * @brief setOpacity, set the opacity
+         * @param opacity
+         */
+        void setOpacity(float opacity);
+
 /**
          * @brief display, display the sprite
          * @param window
@@ -70,7 +76,7 @@ class SpriteComponent : public AComponent
          * @param event
          * @param window
          */
-        void handleEvent(const sf::Event &event, sf::RenderWindow &window) override;
+        void handleEvent(const sf::Event &event, sf::RenderWindow &window, IComponent *parentComponent) override;
 
         /**
          * @brief getTexture, get the texture
@@ -78,14 +84,25 @@ class SpriteComponent : public AComponent
          */
         sf::Texture getTexture();
 
+        /**
+         * @brief setIsClicked, set the isClicked
+         * @param isClicked
+         */
+        void setIsClicked(bool isClicked);
+
+        /**
+         * @brief getIsClicked, get the isClicked
+         * @return bool
+         */
+        bool getIsClicked();
+
     private:
         sf::Sprite _sprite;
         sf::Texture _texture;
-        sf::Vector2f _position;
-        sf::Vector2f _size;
         sf::IntRect _rect;
         bool _isTextureSet;
         bool _isPositionSet;
         bool _isSizeSet;
+        bool _isClicked{};
 
 };
