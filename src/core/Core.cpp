@@ -26,12 +26,14 @@ void Core::run()
             removeWindow(window->getWindowId());
         }
     }*/
+
     if (_windows[0]->isOpen())
     {
         _windows[0]->clear();
         _windows[0]->handleEvent();
         if (_windows[0]->isOpen()) {
-            _windows[0]->drawComponents();
+            _windows[0]->update();
+            _windows[0]->drawScene();
             _windows[0]->display();
         }
     }

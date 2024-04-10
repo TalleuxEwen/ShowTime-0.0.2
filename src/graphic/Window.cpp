@@ -4,12 +4,16 @@
 
 #include "Window.hpp"
 #include "../core/Core.hpp"
+#include "../graphic/Scenes/LoadScene/LoadScene.hpp"
+#include "Scenes/MainScene/MainScene.hpp"
 
 #include <utility>
 #include <iostream>
 
 Window::Window(Core *core, std::string windowName, sf::Vector2u windowSize)
 {
+    _core = core;
+
     _windowId = 0;
     _windowName = std::move(windowName);
     _windowSize = windowSize;
@@ -19,7 +23,7 @@ Window::Window(Core *core, std::string windowName, sf::Vector2u windowSize)
     _windowVerticalSyncEnabled = false;
     _windowMouseCursorVisible = true;
 
-    _renderWindow = new sf::RenderWindow(sf::VideoMode(_windowSize.x, _windowSize.y), _windowName);
+    _renderWindow.create(sf::VideoMode(_windowSize.x, _windowSize.y), _windowName);
 
     setWindowFramerateLimit(_windowFramerateLimit);
     setWindowVerticalSyncEnabled(_windowVerticalSyncEnabled);
@@ -32,56 +36,73 @@ Window::Window(Core *core, std::string windowName, sf::Vector2u windowSize)
     if (!icon.loadFromFile("assets/icon.png")) {
         std::cerr << "Error: could not load icon.png" << std::endl;
     } else {
-        _renderWindow->setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
+        _renderWindow.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
     }
 
-    _core = core;
+    _scenePool["Loading"] = std::make_shared<LoadScene>(_core);
+    _scenePool["Main"] = std::make_shared<MainScene>(_core);
+
+    _currentScene = getSceneByName("Loading");
 }
 
 bool Window::isOpen() const
 {
-    return _renderWindow->isOpen();
+    return _renderWindow.isOpen();
 }
 
 void Window::close()
 {
-    _renderWindow->close();
+    _renderWindow.close();
     _core->removeWindow(_windowId);
 }
 
 void Window::clear()
 {
-    _renderWindow->clear();
+    _renderWindow.clear(sf::Color::Black);
 }
 
 void Window::display()
 {
-    _renderWindow->display();
+    _renderWindow.display();
 }
 
 bool Window::pollEvent()
 {
-    return _renderWindow->pollEvent(_windowEvent);
+    return _renderWindow.pollEvent(_windowEvent);
 }
 
 void Window::handleEvent()
 {
     while (pollEvent())
     {
-        if (_windowEvent.type == sf::Event::Closed)
+        if (_windowEvent.type == sf::Event::Closed) {
             close();
-
-        if (_windowEvent.type == sf::Event::KeyPressed)
-        {
-            if (_windowEvent.key.code == sf::Keyboard::Space)
-                _core->addWindow("Window", sf::Vector2u(800, 600));
-
+            return;
         }
+
+        _currentScene->handleEvent(_windowEvent, _renderWindow);
     }
 }
 
-void Window::drawComponents()
+void Window::drawScene()
 {
+    _currentScene->display(_renderWindow);
+}
+
+void Window::update()
+{
+    _currentScene->update();
+}
+
+void Window::changeScene(std::string sceneName)
+{
+    auto scene = getSceneByName(sceneName);
+    if (scene == nullptr)
+    {
+        std::cerr << "Error: could not find scene " << sceneName << std::endl;
+        return;
+    }
+    _currentScene = getSceneByName(std::move(sceneName));
 }
 
 //getters
@@ -91,9 +112,24 @@ unsigned int Window::getWindowId() const
     return _windowId;
 }
 
-sf::RenderWindow *Window::getRenderWindow() const
+std::shared_ptr<IScene> Window::getCurrentScene() const
+{
+    return _currentScene;
+}
+
+std::map<std::string, std::shared_ptr<IScene>> Window::getScenePool() const
+{
+    return _scenePool;
+}
+
+sf::RenderWindow &Window::getRenderWindow()
 {
     return _renderWindow;
+}
+
+std::shared_ptr<IScene> Window::getSceneByName(std::string name)
+{
+    return _scenePool[name];
 }
 
 sf::Vector2u Window::getWindowSize() const
@@ -151,19 +187,19 @@ void Window::setWindowSize(const sf::Vector2u &windowSize)
 void Window::setWindowPosition(const sf::Vector2i &windowPosition)
 {
     _windowPosition = windowPosition;
-    _renderWindow->setPosition(_windowPosition);
+    _renderWindow.setPosition(_windowPosition);
 }
 
 void Window::setWindowMouseStyle(sf::Cursor::Type windowMouseStyle)
 {
-    _renderWindow->setMouseCursorVisible(windowMouseStyle);
+    _renderWindow.setMouseCursorVisible(windowMouseStyle);
     _windowMouseStyle = windowMouseStyle;
 }
 
 void Window::setWindowName(const std::string &windowName)
 {
     _windowName = windowName;
-    _renderWindow->setTitle(_windowName);
+    _renderWindow.setTitle(_windowName);
 }
 
 void Window::setWindowEvent(const sf::Event &windowEvent)
@@ -173,18 +209,18 @@ void Window::setWindowEvent(const sf::Event &windowEvent)
 
 void Window::setWindowFramerateLimit(unsigned int windowFramerateLimit)
 {
-    _renderWindow->setFramerateLimit(windowFramerateLimit);
+    _renderWindow.setFramerateLimit(windowFramerateLimit);
     _windowFramerateLimit = windowFramerateLimit;
 }
 
 void Window::setWindowVerticalSyncEnabled(bool windowVerticalSyncEnabled)
 {
-    _renderWindow->setVerticalSyncEnabled(windowVerticalSyncEnabled);
+    _renderWindow.setVerticalSyncEnabled(windowVerticalSyncEnabled);
     _windowVerticalSyncEnabled = windowVerticalSyncEnabled;
 }
 
 void Window::setWindowMouseCursorVisible(bool windowMouseCursorVisible)
 {
-    _renderWindow->setMouseCursorVisible(windowMouseCursorVisible);
+    _renderWindow.setMouseCursorVisible(windowMouseCursorVisible);
     _windowMouseCursorVisible = windowMouseCursorVisible;
 }

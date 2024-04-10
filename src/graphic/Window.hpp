@@ -60,7 +60,17 @@ class Window
         /**
          * @brief drawComponents, draw components
          */
-        void drawComponents();
+        void drawScene();
+
+        /**
+         * @brief update, update the window
+         */
+        void update();
+
+        /**
+         * @brief changeScene, change the scene
+         */
+        void changeScene(std::string sceneName);
 
         // Getters
         /**
@@ -73,19 +83,25 @@ class Window
          * @brief getCurrentScene, get the current scene
          * @return the current scene
          */
-        //std::shared_ptr<IScene> getCurrentScene() const;
+        std::shared_ptr<IScene> getCurrentScene() const;
 
         /**
          * @brief getScenePool, get the scene pool
          * @return the scene pool
          */
-        //std::vector<std::shared_ptr<IScene>> getScenePool() const;
+        std::map<std::string, std::shared_ptr<IScene>> getScenePool() const;
 
         /**
          * @brief getRenderWindow, get the render window
          * @return the render window
          */
-        sf::RenderWindow *getRenderWindow() const;
+        sf::RenderWindow &getRenderWindow();
+
+        /**
+         * @brief getCore, get the core
+         * @return the core
+         */
+         std::shared_ptr<IScene> getSceneByName(std::string name);
 
         /**
          * @brief getWindowName, get the window name
@@ -197,7 +213,7 @@ class Window
         void setWindowMouseStyle(sf::Cursor::Type windowMouseStyle);
 
 
-    private:
+    protected:
             /**
              * @brief _windowId, window id
              */
@@ -206,17 +222,17 @@ class Window
             /**
              * @brief _currentScene, current scene
              */
-            //std::shared_ptr<IScene> _currentScene;
+            std::shared_ptr<IScene> _currentScene;
 
             /**
              * @brief _scenePool, scene pool
              */
-            //std::vector<std::shared_ptr<IScene>> _scenePool;
+            std::map<std::string, std::shared_ptr<IScene>> _scenePool;
 
             /**
              * @brief _renderWindow, render window
              */
-            sf::RenderWindow *_renderWindow;
+            sf::RenderWindow _renderWindow;
 
             /**
              * @brief _windowName, window name
@@ -263,7 +279,9 @@ class Window
              */
             Core *_core;
 
-            sf::RectangleShape *_background;
-
+            /**
+             * @brief _newScene, new scene
+             */
+             std::string _newScene;
 
 };
