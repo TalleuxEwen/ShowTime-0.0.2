@@ -1,5 +1,7 @@
 <map id="AScene::update" name="AScene::update">
-<area shape="rect" id="Node000001" title="update, update the scene" alt="" coords="186,5,298,31"/>
+<area shape="rect" id="Node000001" title="update, update the scene" alt="" coords="186,31,298,56"/>
 <area shape="rect" id="Node000002" href="$classLoadScene.html#aba688ee98170aad3f6a9a667d2790a33" title="update, update the scene" alt="" coords="5,5,138,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,21,138,21,138,16,170,16"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,36,138,31,138,25,171,30"/>
+<area shape="rect" id="Node000003" href="$classMainScene.html#a17d18e1ea8577b48d04aeb35bb4f40b4" title="update, update the scene" alt="" coords="6,55,137,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,56,138,61,137,56,170,51"/>
 </map>

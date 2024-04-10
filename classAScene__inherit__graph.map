@@ -1,7 +1,9 @@
 <map id="AScene" name="AScene">
-<area shape="rect" id="Node000001" title=" " alt="" coords="15,79,83,105"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="70,79,137,105"/>
 <area shape="rect" id="Node000003" href="$classLoadScene.html" title=" " alt="" coords="5,153,93,178"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="52,120,52,152,46,152,46,120"/>
-<area shape="rect" id="Node000002" href="$classIScene.html" title=" " alt="" coords="18,5,80,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,46,52,79,46,79,46,46"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,118,60,154,56,151,83,115"/>
+<area shape="rect" id="Node000004" href="$classMainScene.html" title=" " alt="" coords="117,153,203,178"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,115,152,151,148,154,120,118"/>
+<area shape="rect" id="Node000002" href="$classIScene.html" title=" " alt="" coords="73,5,135,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,46,106,79,101,79,101,46"/>
 </map>

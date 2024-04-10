@@ -1,0 +1,9 @@
+<map id="AComponent::setWidth" name="AComponent::setWidth">
+<area shape="rect" id="Node000001" title="setWidth, set the width" alt="" coords="439,38,592,64"/>
+<area shape="rect" id="Node000002" href="$classVueMeterComponent.html#ae98bbd1651f86284f049947c78e36f5c" title="init, init the vue meter" alt="" coords="214,13,380,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="424,43,380,38,381,33,424,38"/>
+<area shape="rect" id="Node000004" href="$classSpriteComponent.html#a70109392f0caaa60a55f78f897948479" title="setTexture, set the texture" alt="" coords="203,62,391,88"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="424,64,392,67,391,62,423,58"/>
+<area shape="rect" id="Node000003" href="$classVueMeterComponent.html#acd2eb00c58d5ba043198567c639ea9f4" title="VueMeterComponent, constructor of VueMeterComponent." alt="" coords="5,5,155,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,28,155,28,155,23,198,23"/>
+</map>

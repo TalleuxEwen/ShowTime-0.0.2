@@ -1,0 +1,7 @@
+<map id="AComponent::addSubComponent" name="AComponent::addSubComponent">
+<area shape="rect" id="Node000001" title="addSubComponent, add a sub component" alt="" coords="417,13,629,39"/>
+<area shape="rect" id="Node000002" href="$classVueMeterComponent.html#ae98bbd1651f86284f049947c78e36f5c" title="init, init the vue meter" alt="" coords="203,13,369,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,28,370,28,370,23,401,23"/>
+<area shape="rect" id="Node000003" href="$classVueMeterComponent.html#acd2eb00c58d5ba043198567c639ea9f4" title="VueMeterComponent, constructor of VueMeterComponent." alt="" coords="5,5,155,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,28,155,28,155,23,187,23"/>
+</map>

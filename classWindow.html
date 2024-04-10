@@ -125,6 +125,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> ()</t
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawScene</b> ()</td></tr>
 <tr class="memdesc:a372003ab556534d2a13e5f47beaed5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawComponents, draw components <br /></td></tr>
 <tr class="separator:a372003ab556534d2a13e5f47beaed5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59515fc5a56e86d5a46d771595daac55" id="r_a59515fc5a56e86d5a46d771595daac55"><td class="memItemLeft" align="right" valign="top"><a id="a59515fc5a56e86d5a46d771595daac55" name="a59515fc5a56e86d5a46d771595daac55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="memdesc:a59515fc5a56e86d5a46d771595daac55"><td class="mdescLeft">&#160;</td><td class="mdescRight">update, update the window <br /></td></tr>
+<tr class="separator:a59515fc5a56e86d5a46d771595daac55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fd946d1b2b9d7cc18d79d892d3e303" id="r_a32fd946d1b2b9d7cc18d79d892d3e303"><td class="memItemLeft" align="right" valign="top"><a id="a32fd946d1b2b9d7cc18d79d892d3e303" name="a32fd946d1b2b9d7cc18d79d892d3e303"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeScene</b> (std::string sceneName)</td></tr>
+<tr class="memdesc:a32fd946d1b2b9d7cc18d79d892d3e303"><td class="mdescLeft">&#160;</td><td class="mdescRight">changeScene, change the scene <br /></td></tr>
+<tr class="separator:a32fd946d1b2b9d7cc18d79d892d3e303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a262fcb08c2947d78462511d6a34a409d" id="r_a262fcb08c2947d78462511d6a34a409d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a262fcb08c2947d78462511d6a34a409d">getWindowId</a> () const</td></tr>
 <tr class="memdesc:a262fcb08c2947d78462511d6a34a409d"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWindowId, get the window id  <br /></td></tr>
 <tr class="separator:a262fcb08c2947d78462511d6a34a409d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,9 +254,10 @@ sf::Cursor::Type&#160;</td><td class="memItemRight" valign="bottom"><b>_windowMo
 <a class="el" href="classCore.html">Core</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_core</b></td></tr>
 <tr class="memdesc:aa04694e82fa42ba1d8878b482f65cd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">_core, core <br /></td></tr>
 <tr class="separator:aa04694e82fa42ba1d8878b482f65cd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a578ff7b50e765097be145615cf726afd" id="r_a578ff7b50e765097be145615cf726afd"><td class="memItemLeft" align="right" valign="top"><a id="a578ff7b50e765097be145615cf726afd" name="a578ff7b50e765097be145615cf726afd"></a>
-sf::RectangleShape *&#160;</td><td class="memItemRight" valign="bottom"><b>_background</b></td></tr>
-<tr class="separator:a578ff7b50e765097be145615cf726afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717764850f9f30c4a48c3ded2bc19aea" id="r_a717764850f9f30c4a48c3ded2bc19aea"><td class="memItemLeft" align="right" valign="top"><a id="a717764850f9f30c4a48c3ded2bc19aea" name="a717764850f9f30c4a48c3ded2bc19aea"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_newScene</b></td></tr>
+<tr class="memdesc:a717764850f9f30c4a48c3ded2bc19aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">_newScene, new scene <br /></td></tr>
+<tr class="separator:a717764850f9f30c4a48c3ded2bc19aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="add75a8c4f31b9f04ef9e8665b1237365" name="add75a8c4f31b9f04ef9e8665b1237365"></a>
@@ -313,9 +322,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph.png" border="0" usemap="#aclassWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph" alt=""/></div>
 <map name="aclassWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph" id="aclassWindow_a3f0e421b2641c91f7813cedd9cfef469_icgraph">
-<area shape="rect" title="getCore, get the core" alt="" coords="173,5,351,31"/>
-<area shape="rect" href="classWindow.html#a708f4ab2e1ada1cdf6e13390e5dd2501" title="Window, constructor of Window." alt="" coords="5,5,125,31"/>
-<area shape="poly" title=" " alt="" coords="157,21,125,21,125,16,157,16"/>
+<area shape="rect" title="getCore, get the core" alt="" coords="206,31,384,56"/>
+<area shape="rect" href="classWindow.html#a32fd946d1b2b9d7cc18d79d892d3e303" title="changeScene, change the scene" alt="" coords="5,5,158,31"/>
+<area shape="poly" title=" " alt="" coords="190,34,158,30,158,25,191,28"/>
+<area shape="rect" href="classWindow.html#a708f4ab2e1ada1cdf6e13390e5dd2501" title="Window, constructor of Window." alt="" coords="22,55,141,80"/>
+<area shape="poly" title=" " alt="" coords="191,58,142,63,141,58,190,53"/>
 </map>
 </div>
 

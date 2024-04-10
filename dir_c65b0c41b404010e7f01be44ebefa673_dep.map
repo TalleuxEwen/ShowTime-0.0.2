@@ -1,5 +1,7 @@
 <map id="src/graphic/Components" name="src/graphic/Components">
-<area shape="rect" id="node2" href="dir_64e08e868531f40aa86656603630e521.html" title="SpriteComponent" alt="" coords="38,63,159,89"/>
-<area shape="rect" id="clust2" href="dir_c65b0c41b404010e7f01be44ebefa673.html" alt="" coords="27,52,288,99"/>
-<area shape="rect" id="clust1" href="dir_546733639134b9431ef34ac72f6d1288.html" title="graphic" alt="" coords="16,16,299,110"/>
+<area shape="rect" id="node2" href="dir_64e08e868531f40aa86656603630e521.html" title="SpriteComponent" alt="" coords="350,63,471,89"/>
+<area shape="rect" id="node3" href="dir_0840a8900964a6c39efdac843566032f.html" title="TimerComponent" alt="" coords="205,63,326,89"/>
+<area shape="rect" id="node4" href="dir_591a00c3c6a2fbe57e0f41d21a3bfd59.html" title="VueMeterComponent" alt="" coords="38,63,181,89"/>
+<area shape="rect" id="clust2" href="dir_c65b0c41b404010e7f01be44ebefa673.html" alt="" coords="27,52,600,99"/>
+<area shape="rect" id="clust1" href="dir_546733639134b9431ef34ac72f6d1288.html" title="graphic" alt="" coords="16,16,611,110"/>
 </map>

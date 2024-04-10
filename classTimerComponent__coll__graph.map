@@ -1,0 +1,9 @@
+<map id="TimerComponent" name="TimerComponent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,244,126,270"/>
+<area shape="rect" id="Node000002" href="$classAComponent.html" title=" " alt="" coords="17,169,114,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,210,68,244,63,244,63,210"/>
+<area shape="rect" id="Node000003" href="$classIComponent.html" title=" " alt="" coords="20,94,111,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,135,68,169,63,169,63,135"/>
+<area shape="rect" id="Node000004" href="$classCore.html" title=" " alt="" coords="41,5,90,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="68,47,68,94,63,94,63,47"/>
+</map>

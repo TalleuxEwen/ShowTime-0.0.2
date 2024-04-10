@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['removewindow_0',['removeWindow',['../classCore.html#a0e00aee1c9828fc8183f8d735f14de65',1,'Core']]],
-  ['resume_1',['resume',['../classAComponent.html#abc8955eed54ad1c8fa90aa031e0fdf31',1,'AComponent::resume()'],['../classIComponent.html#ad07cfbedc3dca466907bb71de58ade8d',1,'IComponent::resume()']]],
-  ['resumescene_2',['resumeScene',['../classAScene.html#a52a5fdd3b7e64a229431c940492f9722',1,'AScene::resumeScene()'],['../classIScene.html#aa403c32d1a454e80d7efd8968653712f',1,'IScene::resumeScene()']]],
-  ['run_3',['run',['../classCore.html#adcc93b561dfefacfe2bcbd60604ea7a6',1,'Core']]]
+  ['pause_0',['pause',['../classAComponent.html#ac13a80e57457ba06c07b095b21f1a644',1,'AComponent::pause()'],['../classIComponent.html#a2aad14c8c0da834e0290f817d6f01a0f',1,'IComponent::pause()']]],
+  ['pausescene_1',['pauseScene',['../classAScene.html#ac84c87170a6a0563e50e9c5ed2d85cdd',1,'AScene::pauseScene()'],['../classIScene.html#a3c9ff4ff7f152e5adb5ab5470a1b4efc',1,'IScene::pauseScene()']]],
+  ['pollevent_2',['pollEvent',['../classWindow.html#a52821b38ae5c3d23b0268f29d1837263',1,'Window']]]
 ];

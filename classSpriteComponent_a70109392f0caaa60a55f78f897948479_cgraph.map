@@ -1,0 +1,7 @@
+<map id="SpriteComponent::setTexture" name="SpriteComponent::setTexture">
+<area shape="rect" id="Node000001" title="setTexture, set the texture" alt="" coords="5,31,194,56"/>
+<area shape="rect" id="Node000002" href="$classAComponent.html#a2014ae0c3a2c3d43d2ce3d11259037c8" title="setHeight, set the height" alt="" coords="242,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,30,226,26,226,32,195,35"/>
+<area shape="rect" id="Node000003" href="$classAComponent.html#abc4f16d663fc8111990a8d0d3fd2d4d5" title="setWidth, set the width" alt="" coords="244,55,398,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,51,229,55,228,60,194,56"/>
+</map>

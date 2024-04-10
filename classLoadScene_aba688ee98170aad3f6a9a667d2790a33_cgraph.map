@@ -1,5 +1,9 @@
 <map id="LoadScene::update" name="LoadScene::update">
-<area shape="rect" id="Node000001" title="update, update the scene" alt="" coords="5,5,138,31"/>
-<area shape="rect" id="Node000002" href="$classAScene.html#a70cae055bb5e2a125d6c4228e046274a" title="update, update the scene" alt="" coords="186,5,298,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,16,170,16,170,21,138,21"/>
+<area shape="rect" id="Node000001" title="update, update the scene" alt="" coords="5,55,138,80"/>
+<area shape="rect" id="Node000002" href="$classAScene.html#ae0fbfe05c09631139853d98fae81e5ef" title="getComponents, get all the components" alt="" coords="186,5,350,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,51,198,33,200,38,126,57"/>
+<area shape="rect" id="Node000003" href="$classCore.html#a882b1ec6d757b6ca5611dee9c1e174b5" title="getWindow, get the window" alt="" coords="209,55,327,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,65,193,65,193,70,138,70"/>
+<area shape="rect" id="Node000004" href="$classAScene.html#a70cae055bb5e2a125d6c4228e046274a" title="update, update the scene" alt="" coords="212,104,324,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,78,200,97,198,102,125,84"/>
 </map>

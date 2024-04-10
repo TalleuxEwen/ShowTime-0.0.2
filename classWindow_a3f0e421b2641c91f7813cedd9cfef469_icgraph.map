@@ -1,5 +1,7 @@
 <map id="Window::getSceneByName" name="Window::getSceneByName">
-<area shape="rect" id="Node000001" title="getCore, get the core" alt="" coords="173,5,351,31"/>
-<area shape="rect" id="Node000002" href="$classWindow.html#a708f4ab2e1ada1cdf6e13390e5dd2501" title="Window, constructor of Window." alt="" coords="5,5,125,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,21,125,21,125,16,157,16"/>
+<area shape="rect" id="Node000001" title="getCore, get the core" alt="" coords="206,31,384,56"/>
+<area shape="rect" id="Node000002" href="$classWindow.html#a32fd946d1b2b9d7cc18d79d892d3e303" title="changeScene, change the scene" alt="" coords="5,5,158,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,34,158,30,158,25,191,28"/>
+<area shape="rect" id="Node000003" href="$classWindow.html#a708f4ab2e1ada1cdf6e13390e5dd2501" title="Window, constructor of Window." alt="" coords="22,55,141,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,58,142,63,141,58,190,53"/>
 </map>

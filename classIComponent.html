@@ -83,11 +83,25 @@ Inheritance diagram for IComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIComponent__inherit__graph.png" border="0" usemap="#aIComponent_inherit__map" alt="Inheritance graph"/></div>
 <map name="aIComponent_inherit__map" id="aIComponent_inherit__map">
-<area shape="rect" title=" " alt="" coords="20,5,112,31"/>
-<area shape="rect" href="classAComponent.html" title=" " alt="" coords="18,79,114,105"/>
-<area shape="poly" title=" " alt="" coords="69,46,69,79,63,79,63,46"/>
+<area shape="rect" title=" " alt="" coords="166,5,257,31"/>
+<area shape="rect" href="classAComponent.html" title=" " alt="" coords="163,79,260,105"/>
+<area shape="poly" title=" " alt="" coords="214,46,214,79,209,79,209,46"/>
 <area shape="rect" href="classSpriteComponent.html" title=" " alt="" coords="5,153,127,178"/>
-<area shape="poly" title=" " alt="" coords="69,120,69,152,63,152,63,120"/>
+<area shape="poly" title=" " alt="" coords="174,114,92,154,90,150,172,109"/>
+<area shape="rect" href="classTimerComponent.html" title=" " alt="" coords="151,153,272,178"/>
+<area shape="poly" title=" " alt="" coords="214,120,214,152,209,152,209,120"/>
+<area shape="rect" href="classVueMeterComponent.html" title=" " alt="" coords="296,153,439,178"/>
+<area shape="poly" title=" " alt="" coords="253,109,342,150,340,154,250,114"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for IComponent:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIComponent__coll__graph.png" border="0" usemap="#aIComponent_coll__map" alt="Collaboration graph"/></div>
+<map name="aIComponent_coll__map" id="aIComponent_coll__map">
+<area shape="rect" title=" " alt="" coords="5,94,97,120"/>
+<area shape="rect" href="classCore.html" title=" " alt="" coords="27,5,75,31"/>
+<area shape="poly" title=" " alt="" coords="54,47,54,94,48,94,48,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -107,9 +121,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IComponent</b> ()
 <tr class="memitem:a0bfcfb242781520bfa07cc3bf56fe0b9" id="r_a0bfcfb242781520bfa07cc3bf56fe0b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bfcfb242781520bfa07cc3bf56fe0b9">update</a> ()=0</td></tr>
 <tr class="memdesc:a0bfcfb242781520bfa07cc3bf56fe0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">update, update the component  <br /></td></tr>
 <tr class="separator:a0bfcfb242781520bfa07cc3bf56fe0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a557a494b366d5836bbd0b2d64aa24619" id="r_a557a494b366d5836bbd0b2d64aa24619"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a557a494b366d5836bbd0b2d64aa24619">handleEvent</a> (const sf::Event &amp;event, sf::RenderWindow &amp;window)=0</td></tr>
-<tr class="memdesc:a557a494b366d5836bbd0b2d64aa24619"><td class="mdescLeft">&#160;</td><td class="mdescRight">handleEvent, handle the event  <br /></td></tr>
-<tr class="separator:a557a494b366d5836bbd0b2d64aa24619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928103ed35ee9149f1973dd5e9634b3e" id="r_a928103ed35ee9149f1973dd5e9634b3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a928103ed35ee9149f1973dd5e9634b3e">handleEvent</a> (const sf::Event &amp;event, sf::RenderWindow &amp;window, <a class="el" href="classIComponent.html">IComponent</a> *parentComponent)=0</td></tr>
+<tr class="memdesc:a928103ed35ee9149f1973dd5e9634b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">handleEvent, handle the event  <br /></td></tr>
+<tr class="separator:a928103ed35ee9149f1973dd5e9634b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aad14c8c0da834e0290f817d6f01a0f" id="r_a2aad14c8c0da834e0290f817d6f01a0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2aad14c8c0da834e0290f817d6f01a0f">pause</a> ()=0</td></tr>
 <tr class="memdesc:a2aad14c8c0da834e0290f817d6f01a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">pause, pause the component  <br /></td></tr>
 <tr class="separator:a2aad14c8c0da834e0290f817d6f01a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +136,36 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IComponent</b> ()
 <tr class="memitem:a3c45af1fdec8d82532c0d815a4920564" id="r_a3c45af1fdec8d82532c0d815a4920564"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IComponent</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c45af1fdec8d82532c0d815a4920564">getSubComponents</a> ()=0</td></tr>
 <tr class="memdesc:a3c45af1fdec8d82532c0d815a4920564"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSubComponents, get all the sub components  <br /></td></tr>
 <tr class="separator:a3c45af1fdec8d82532c0d815a4920564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e64af603fb3f1b3f248785898cfafed" id="r_a9e64af603fb3f1b3f248785898cfafed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e64af603fb3f1b3f248785898cfafed">setAttribute</a> (const std::string &amp;attribute)=0</td></tr>
+<tr class="memdesc:a9e64af603fb3f1b3f248785898cfafed"><td class="mdescLeft">&#160;</td><td class="mdescRight">setAttribute, set the attribute  <br /></td></tr>
+<tr class="separator:a9e64af603fb3f1b3f248785898cfafed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8266336d619d9c2f3d8871ec25b7a648" id="r_a8266336d619d9c2f3d8871ec25b7a648"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8266336d619d9c2f3d8871ec25b7a648">getAttribute</a> () const =0</td></tr>
+<tr class="memdesc:a8266336d619d9c2f3d8871ec25b7a648"><td class="mdescLeft">&#160;</td><td class="mdescRight">getAttribute, get the attribute  <br /></td></tr>
+<tr class="separator:a8266336d619d9c2f3d8871ec25b7a648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d3dbfc752469da0f0b06d37be28647" id="r_a72d3dbfc752469da0f0b06d37be28647"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72d3dbfc752469da0f0b06d37be28647">setPosition</a> (const sf::Vector2f &amp;position)=0</td></tr>
+<tr class="memdesc:a72d3dbfc752469da0f0b06d37be28647"><td class="mdescLeft">&#160;</td><td class="mdescRight">setPosition, set the position  <br /></td></tr>
+<tr class="separator:a72d3dbfc752469da0f0b06d37be28647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac80e4aff7815158db74e813a6d45af99" id="r_ac80e4aff7815158db74e813a6d45af99"><td class="memItemLeft" align="right" valign="top">virtual sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac80e4aff7815158db74e813a6d45af99">getPosition</a> () const =0</td></tr>
+<tr class="memdesc:ac80e4aff7815158db74e813a6d45af99"><td class="mdescLeft">&#160;</td><td class="mdescRight">getPosition, get the position  <br /></td></tr>
+<tr class="separator:ac80e4aff7815158db74e813a6d45af99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2a2dd6aabed6f5034fd33363176e63" id="r_a7a2a2dd6aabed6f5034fd33363176e63"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a2a2dd6aabed6f5034fd33363176e63">setSize</a> (const sf::Vector2f &amp;size)=0</td></tr>
+<tr class="memdesc:a7a2a2dd6aabed6f5034fd33363176e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">setSize, set the size  <br /></td></tr>
+<tr class="separator:a7a2a2dd6aabed6f5034fd33363176e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afedd39cd3e5a479b1db179478fd78ec2" id="r_afedd39cd3e5a479b1db179478fd78ec2"><td class="memItemLeft" align="right" valign="top">virtual sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afedd39cd3e5a479b1db179478fd78ec2">getSize</a> () const =0</td></tr>
+<tr class="memdesc:afedd39cd3e5a479b1db179478fd78ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSize, get the size  <br /></td></tr>
+<tr class="separator:afedd39cd3e5a479b1db179478fd78ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65e619e78cd90923f7919862eaef6f3" id="r_ab65e619e78cd90923f7919862eaef6f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab65e619e78cd90923f7919862eaef6f3">setHeight</a> (float height)=0</td></tr>
+<tr class="memdesc:ab65e619e78cd90923f7919862eaef6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">setHeight, set the height  <br /></td></tr>
+<tr class="separator:ab65e619e78cd90923f7919862eaef6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7500b6c2388a91f2f160da736d577dab" id="r_a7500b6c2388a91f2f160da736d577dab"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7500b6c2388a91f2f160da736d577dab">getHeight</a> () const =0</td></tr>
+<tr class="memdesc:a7500b6c2388a91f2f160da736d577dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">getHeight, get the height  <br /></td></tr>
+<tr class="separator:a7500b6c2388a91f2f160da736d577dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b094366e041cce1f6f92ce80ea78d77" id="r_a6b094366e041cce1f6f92ce80ea78d77"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b094366e041cce1f6f92ce80ea78d77">setWidth</a> (float width)=0</td></tr>
+<tr class="memdesc:a6b094366e041cce1f6f92ce80ea78d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">setWidth, set the width  <br /></td></tr>
+<tr class="separator:a6b094366e041cce1f6f92ce80ea78d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14ae743f45902e8097ad935ec6ed651" id="r_ac14ae743f45902e8097ad935ec6ed651"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac14ae743f45902e8097ad935ec6ed651">getWidth</a> () const =0</td></tr>
+<tr class="memdesc:ac14ae743f45902e8097ad935ec6ed651"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWidth, get the width  <br /></td></tr>
+<tr class="separator:ac14ae743f45902e8097ad935ec6ed651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -129,6 +173,30 @@ Protected Attributes</h2></td></tr>
 std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IComponent</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_subComponents</b></td></tr>
 <tr class="memdesc:a3f071c99a129e22234cacfef8e6a401b"><td class="mdescLeft">&#160;</td><td class="mdescRight">_subComponents, the sub components <br /></td></tr>
 <tr class="separator:a3f071c99a129e22234cacfef8e6a401b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776b9291f2f50afbe07d46f944093ace" id="r_a776b9291f2f50afbe07d46f944093ace"><td class="memItemLeft" align="right" valign="top"><a id="a776b9291f2f50afbe07d46f944093ace" name="a776b9291f2f50afbe07d46f944093ace"></a>
+<a class="el" href="classCore.html">Core</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>_core</b></td></tr>
+<tr class="memdesc:a776b9291f2f50afbe07d46f944093ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">_core, the core <br /></td></tr>
+<tr class="separator:a776b9291f2f50afbe07d46f944093ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6487ecca529fc4e4790dfa792a5bcb6" id="r_af6487ecca529fc4e4790dfa792a5bcb6"><td class="memItemLeft" align="right" valign="top"><a id="af6487ecca529fc4e4790dfa792a5bcb6" name="af6487ecca529fc4e4790dfa792a5bcb6"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_attribute</b></td></tr>
+<tr class="memdesc:af6487ecca529fc4e4790dfa792a5bcb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">_attribute, the attribute <br /></td></tr>
+<tr class="separator:af6487ecca529fc4e4790dfa792a5bcb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b180fe989e1d2235395f7d60debbadb" id="r_a8b180fe989e1d2235395f7d60debbadb"><td class="memItemLeft" align="right" valign="top"><a id="a8b180fe989e1d2235395f7d60debbadb" name="a8b180fe989e1d2235395f7d60debbadb"></a>
+sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><b>_position</b> {0, 0}</td></tr>
+<tr class="memdesc:a8b180fe989e1d2235395f7d60debbadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">_position, the position <br /></td></tr>
+<tr class="separator:a8b180fe989e1d2235395f7d60debbadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351ef7a7345ed1cbd6a87da3e3f5db9e" id="r_a351ef7a7345ed1cbd6a87da3e3f5db9e"><td class="memItemLeft" align="right" valign="top"><a id="a351ef7a7345ed1cbd6a87da3e3f5db9e" name="a351ef7a7345ed1cbd6a87da3e3f5db9e"></a>
+sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><b>_size</b> {1, 1}</td></tr>
+<tr class="memdesc:a351ef7a7345ed1cbd6a87da3e3f5db9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">_size, the size <br /></td></tr>
+<tr class="separator:a351ef7a7345ed1cbd6a87da3e3f5db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9ce27fe5f5f9417f5df8ca14eb2674" id="r_a0c9ce27fe5f5f9417f5df8ca14eb2674"><td class="memItemLeft" align="right" valign="top"><a id="a0c9ce27fe5f5f9417f5df8ca14eb2674" name="a0c9ce27fe5f5f9417f5df8ca14eb2674"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_height</b> = 1080</td></tr>
+<tr class="memdesc:a0c9ce27fe5f5f9417f5df8ca14eb2674"><td class="mdescLeft">&#160;</td><td class="mdescRight">height, the height <br /></td></tr>
+<tr class="separator:a0c9ce27fe5f5f9417f5df8ca14eb2674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd0a8fd583a4a9c23622982007223a0" id="r_a2fd0a8fd583a4a9c23622982007223a0"><td class="memItemLeft" align="right" valign="top"><a id="a2fd0a8fd583a4a9c23622982007223a0" name="a2fd0a8fd583a4a9c23622982007223a0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_width</b> = 1920</td></tr>
+<tr class="memdesc:a2fd0a8fd583a4a9c23622982007223a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">width, the width <br /></td></tr>
+<tr class="separator:a2fd0a8fd583a4a9c23622982007223a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a89d1a460f9d8922984ab801cd518e559" name="a89d1a460f9d8922984ab801cd518e559"></a>
@@ -185,7 +253,153 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IC
 
 <p>display, display the component </p>
 
-<p>Implemented in <a class="el" href="classAComponent.html#a1ebf1d006e63d326e57c61715e3a28f3">AComponent</a>, and <a class="el" href="classSpriteComponent.html#aea71cee3ad455b6e7080b327e2b041fd">SpriteComponent</a>.</p>
+<p>Implemented in <a class="el" href="classAComponent.html#a1ebf1d006e63d326e57c61715e3a28f3">AComponent</a>, <a class="el" href="classSpriteComponent.html#aea71cee3ad455b6e7080b327e2b041fd">SpriteComponent</a>, and <a class="el" href="classVueMeterComponent.html#a78252c9ceaf49acbf6a6b5e0c06bf899">VueMeterComponent</a>.</p>
+
+</div>
+</div>
+<a id="a8266336d619d9c2f3d8871ec25b7a648" name="a8266336d619d9c2f3d8871ec25b7a648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8266336d619d9c2f3d8871ec25b7a648">&#9670;&#160;</a></span>getAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string IComponent::getAttribute </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getAttribute, get the attribute </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#a88370c50779f351fb6b0e9c763ab6e0f">AComponent</a>.</p>
+
+</div>
+</div>
+<a id="a7500b6c2388a91f2f160da736d577dab" name="a7500b6c2388a91f2f160da736d577dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7500b6c2388a91f2f160da736d577dab">&#9670;&#160;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float IComponent::getHeight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getHeight, get the height </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#a9b2d38236340f8aca3c5a457ef471a63">AComponent</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIComponent_a7500b6c2388a91f2f160da736d577dab_icgraph.png" border="0" usemap="#aclassIComponent_a7500b6c2388a91f2f160da736d577dab_icgraph" alt=""/></div>
+<map name="aclassIComponent_a7500b6c2388a91f2f160da736d577dab_icgraph" id="aclassIComponent_a7500b6c2388a91f2f160da736d577dab_icgraph">
+<area shape="rect" title="getHeight, get the height" alt="" coords="252,5,405,31"/>
+<area shape="rect" href="classSpriteComponent.html#aa567e8234c65124674bf9fc817b3b584" title="handleEvent, handle the event" alt="" coords="5,5,204,31"/>
+<area shape="poly" title=" " alt="" coords="236,21,204,21,204,16,236,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac80e4aff7815158db74e813a6d45af99" name="ac80e4aff7815158db74e813a6d45af99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac80e4aff7815158db74e813a6d45af99">&#9670;&#160;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual sf::Vector2f IComponent::getPosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getPosition, get the position </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#a36bc48313a6e19cca9265141b469b6ad">AComponent</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIComponent_ac80e4aff7815158db74e813a6d45af99_icgraph.png" border="0" usemap="#aclassIComponent_ac80e4aff7815158db74e813a6d45af99_icgraph" alt=""/></div>
+<map name="aclassIComponent_ac80e4aff7815158db74e813a6d45af99_icgraph" id="aclassIComponent_ac80e4aff7815158db74e813a6d45af99_icgraph">
+<area shape="rect" title="getPosition, get the position" alt="" coords="252,5,414,31"/>
+<area shape="rect" href="classSpriteComponent.html#aa567e8234c65124674bf9fc817b3b584" title="handleEvent, handle the event" alt="" coords="5,5,204,31"/>
+<area shape="poly" title=" " alt="" coords="236,21,204,21,204,16,236,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afedd39cd3e5a479b1db179478fd78ec2" name="afedd39cd3e5a479b1db179478fd78ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afedd39cd3e5a479b1db179478fd78ec2">&#9670;&#160;</a></span>getSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual sf::Vector2f IComponent::getSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getSize, get the size </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#aaf825edf9a23559cf56e6d3b9051fff1">AComponent</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIComponent_afedd39cd3e5a479b1db179478fd78ec2_icgraph.png" border="0" usemap="#aclassIComponent_afedd39cd3e5a479b1db179478fd78ec2_icgraph" alt=""/></div>
+<map name="aclassIComponent_afedd39cd3e5a479b1db179478fd78ec2_icgraph" id="aclassIComponent_afedd39cd3e5a479b1db179478fd78ec2_icgraph">
+<area shape="rect" title="getSize, get the size" alt="" coords="252,5,392,31"/>
+<area shape="rect" href="classSpriteComponent.html#aa567e8234c65124674bf9fc817b3b584" title="handleEvent, handle the event" alt="" coords="5,5,204,31"/>
+<area shape="poly" title=" " alt="" coords="236,21,204,21,204,16,236,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -218,8 +432,37 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IC
 
 </div>
 </div>
-<a id="a557a494b366d5836bbd0b2d64aa24619" name="a557a494b366d5836bbd0b2d64aa24619"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a557a494b366d5836bbd0b2d64aa24619">&#9670;&#160;</a></span>handleEvent()</h2>
+<a id="ac14ae743f45902e8097ad935ec6ed651" name="ac14ae743f45902e8097ad935ec6ed651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14ae743f45902e8097ad935ec6ed651">&#9670;&#160;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float IComponent::getWidth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getWidth, get the width </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#aeca2e9d8b3e2feae9258e8d73c38ce83">AComponent</a>.</p>
+
+</div>
+</div>
+<a id="a928103ed35ee9149f1973dd5e9634b3e" name="a928103ed35ee9149f1973dd5e9634b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a928103ed35ee9149f1973dd5e9634b3e">&#9670;&#160;</a></span>handleEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +478,12 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IC
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sf::RenderWindow &amp;</td>          <td class="paramname"><span class="paramname"><em>window</em></span>&#160;)</td>
+          <td class="paramtype">sf::RenderWindow &amp;</td>          <td class="paramname"><span class="paramname"><em>window</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classIComponent.html">IComponent</a> *</td>          <td class="paramname"><span class="paramname"><em>parentComponent</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -247,7 +495,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IC
 
 <p>handleEvent, handle the event </p>
 
-<p>Implemented in <a class="el" href="classAComponent.html#a1254c7b1b86fe81d5cdfc4684ab214e1">AComponent</a>, and <a class="el" href="classSpriteComponent.html#a948ccee65b3aa1322139b32cfd03bb0b">SpriteComponent</a>.</p>
+<p>Implemented in <a class="el" href="classAComponent.html#a0494cd6b0200e429c59793af271b89e3">AComponent</a>, <a class="el" href="classSpriteComponent.html#aa567e8234c65124674bf9fc817b3b584">SpriteComponent</a>, and <a class="el" href="classVueMeterComponent.html#aa430dfac7f4a958c5ef29a14eb73c495">VueMeterComponent</a>.</p>
 
 </div>
 </div>
@@ -309,6 +557,151 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IC
 
 </div>
 </div>
+<a id="a9e64af603fb3f1b3f248785898cfafed" name="a9e64af603fb3f1b3f248785898cfafed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e64af603fb3f1b3f248785898cfafed">&#9670;&#160;</a></span>setAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IComponent::setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>attribute</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setAttribute, set the attribute </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#a30810656068c882ad53bba84987b863f">AComponent</a>.</p>
+
+</div>
+</div>
+<a id="ab65e619e78cd90923f7919862eaef6f3" name="ab65e619e78cd90923f7919862eaef6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab65e619e78cd90923f7919862eaef6f3">&#9670;&#160;</a></span>setHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IComponent::setHeight </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>height</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setHeight, set the height </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#a2014ae0c3a2c3d43d2ce3d11259037c8">AComponent</a>.</p>
+
+</div>
+</div>
+<a id="a72d3dbfc752469da0f0b06d37be28647" name="a72d3dbfc752469da0f0b06d37be28647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d3dbfc752469da0f0b06d37be28647">&#9670;&#160;</a></span>setPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IComponent::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Vector2f &amp;</td>          <td class="paramname"><span class="paramname"><em>position</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setPosition, set the position </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#af318299f216eb73e332efd3811d975a5">AComponent</a>.</p>
+
+</div>
+</div>
+<a id="a7a2a2dd6aabed6f5034fd33363176e63" name="a7a2a2dd6aabed6f5034fd33363176e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2a2dd6aabed6f5034fd33363176e63">&#9670;&#160;</a></span>setSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IComponent::setSize </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Vector2f &amp;</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setSize, set the size </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#a2be18eab1c9f23e50f06b099a25490a8">AComponent</a>.</p>
+
+</div>
+</div>
+<a id="a6b094366e041cce1f6f92ce80ea78d77" name="a6b094366e041cce1f6f92ce80ea78d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b094366e041cce1f6f92ce80ea78d77">&#9670;&#160;</a></span>setWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IComponent::setWidth </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>width</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setWidth, set the width </p>
+
+<p>Implemented in <a class="el" href="classAComponent.html#abc4f16d663fc8111990a8d0d3fd2d4d5">AComponent</a>.</p>
+
+</div>
+</div>
 <a id="a0bfcfb242781520bfa07cc3bf56fe0b9" name="a0bfcfb242781520bfa07cc3bf56fe0b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bfcfb242781520bfa07cc3bf56fe0b9">&#9670;&#160;</a></span>update()</h2>
 
@@ -334,7 +727,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classIComponent.html">IC
 
 <p>update, update the component </p>
 
-<p>Implemented in <a class="el" href="classAComponent.html#aeed6e022ff7b1df67afb5af57f2d9936">AComponent</a>.</p>
+<p>Implemented in <a class="el" href="classAComponent.html#aeed6e022ff7b1df67afb5af57f2d9936">AComponent</a>, and <a class="el" href="classTimerComponent.html#afa6844577f176178b4c081c820540434">TimerComponent</a>.</p>
 
 </div>
 </div>
