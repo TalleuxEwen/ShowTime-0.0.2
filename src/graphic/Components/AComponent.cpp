@@ -88,3 +88,13 @@ void AComponent::setWidth(float width)
 {
     _width = width;
 }
+
+std::shared_ptr<IComponent> AComponent::getSubComponentByAttribute(const std::string &attribute)
+{
+    for (auto &component : _subComponents) {
+        if (component->getAttribute() == attribute) {
+            return component;
+        }
+    }
+    return nullptr;
+}

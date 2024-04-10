@@ -57,4 +57,19 @@ class VueMeterComponent : public AComponent
          */
         void handleEvent(const sf::Event &event, sf::RenderWindow &window, IComponent *parentComponent) override;
 
+        /**
+         * @brief setVolumeValues, set the volume
+         * @param volume
+         */
+        void setVolumeValues(const float *volume, int size);
+
+        /**
+         * @brief update, update the component
+         */
+        void update() override;
+
+    private:
+        float _leftVolumeValue = 10;
+        float _rightVolumeValue = 50;
+
 };

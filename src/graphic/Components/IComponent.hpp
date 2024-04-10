@@ -107,6 +107,11 @@ class IComponent
          */
         virtual float getWidth() const = 0;
 
+        /**
+         * @brief getSubComponentByAttribute, get the sub component by attribute
+         */
+        virtual std::shared_ptr<IComponent> getSubComponentByAttribute(const std::string &attribute) = 0;
+
     protected:
         /**
          * @brief _subComponents, the sub components

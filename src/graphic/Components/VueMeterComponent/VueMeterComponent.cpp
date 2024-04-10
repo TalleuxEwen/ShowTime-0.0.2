@@ -2,6 +2,7 @@
 // Created by talleux on 4/10/24.
 //
 
+#include <iostream>
 #include "VueMeterComponent.hpp"
 
 VueMeterComponent::VueMeterComponent(Core *core) : AComponent(core)
@@ -20,6 +21,7 @@ void VueMeterComponent::init()
     vue->setTexture(texture);
     vue->setPosition(_position.x + 0, _position.y + 0);
     vue->setSize(sf::Vector2f(1, 1));
+    vue->setAttribute("vue");
     setWidth((float)texture.getSize().x * vue->getSize().x);
     setHeight((float)texture.getSize().y * vue->getSize().y);
 
@@ -33,8 +35,27 @@ void VueMeterComponent::init()
     fader->setOpacity(75);
     fader->setAttribute("fader");
 
+    sf::Texture texture3;
+    if (!texture3.loadFromFile("assets/vue_meter/black.jpg"))
+        throw std::runtime_error("Cannot load file assets/vue_meter/black.jpg");
+    auto black = std::make_shared<SpriteComponent>(_core);
+    black->setTexture(texture3);
+    black->setSize(sf::Vector2f(1, 1));
+    black->setPosition(_position.x + 0, _position.y + 0);
+    black->setOpacity(75);
+    black->setAttribute("blackLeft");
+
+    auto black2 = std::make_shared<SpriteComponent>(_core);
+    black2->setTexture(texture3);
+    black2->setSize(sf::Vector2f(1, 1));
+    black2->setPosition(_position.x + (((float)texture.getSize().x * vue->getSize().x) / 2) , _position.y + 0);
+    black2->setOpacity(75);
+    black2->setAttribute("blackRight");
+
 
     addSubComponent(vue);
+    addSubComponent(black);
+    addSubComponent(black2);
     addSubComponent(fader);
 }
 
@@ -82,6 +103,52 @@ void VueMeterComponent::handleEvent(const sf::Event &event, sf::RenderWindow &wi
 {
     for (auto &component : _subComponents) {
         component->handleEvent(event, window, this);
+    }
+}
+
+void VueMeterComponent::setVolumeValues(const float *volume, int size)
+{
+    if (size == 1) {
+        _leftVolumeValue = volume[0];
+        _rightVolumeValue = volume[0];
+    } else if (size == 2) {
+        _leftVolumeValue = volume[0];
+        _rightVolumeValue = volume[1];
+    }
+}
+
+void VueMeterComponent::update()
+{
+
+    auto black = AComponent::getSubComponentByAttribute("blackLeft");
+    auto black2 = AComponent::getSubComponentByAttribute("blackRight");
+    auto vue = AComponent::getSubComponentByAttribute("vue");
+
+    if (black && black2 && vue) {
+        auto blackSprite = std::dynamic_pointer_cast<SpriteComponent>(black);
+        auto blackSprite2 = std::dynamic_pointer_cast<SpriteComponent>(black2);
+        auto vueSprite = std::dynamic_pointer_cast<SpriteComponent>(vue);
+
+        float width = vueSprite->getSize().x * (float)vueSprite->getTexture().getSize().x;
+        float height = vueSprite->getSize().y * (float)vueSprite->getTexture().getSize().y;
+
+        auto calculateRatio = [this, &width, &height](float volume, const std::shared_ptr<SpriteComponent>& blackSprite) {
+            float blackWidth = (float)blackSprite->getTexture().getSize().x;
+            float blackHeight = (float)blackSprite->getTexture().getSize().y;
+
+            float ratioX = width / blackWidth / 2;
+            float ratioY = height / blackHeight;
+
+            int volumePower = abs((int)volume - 100);
+
+            ratioY = ratioY * (float)(volumePower / 100.0);
+
+            return sf::Vector2f(ratioX, ratioY);
+        };
+
+        blackSprite->setSize(calculateRatio(_leftVolumeValue, blackSprite));
+        blackSprite2->setSize(calculateRatio(_rightVolumeValue, blackSprite2));
+
     }
 }
 

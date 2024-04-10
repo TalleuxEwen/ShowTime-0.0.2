@@ -104,4 +104,9 @@ class AComponent : public IComponent
           */
          float getWidth() const override;
 
+         /**
+          * @brief getSubComponentByAttribute, get a sub component by its attribute
+          */
+         std::shared_ptr<IComponent> getSubComponentByAttribute(const std::string &attribute) override;
+
 };

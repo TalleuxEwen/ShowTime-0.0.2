@@ -51,7 +51,7 @@ void LoadScene::initScene()
 
     auto timer = std::make_shared<TimerComponent>(_core);
     timer->setAttribute("timer");
-    timeval target = {5, 0};
+    timeval target = {2, 0};
     timer->setTargetTime(target);
     timer->start();
 
