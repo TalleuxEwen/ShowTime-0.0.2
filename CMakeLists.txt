@@ -41,7 +41,11 @@ add_executable(ShowTime_0_0_2
         src/graphic/Components/TimerComponent/TimerComponent.cpp
         src/graphic/Components/TimerComponent/TimerComponent.hpp
         src/graphic/Scenes/MainScene/MainScene.cpp
-        src/graphic/Scenes/MainScene/MainScene.hpp)
+        src/graphic/Scenes/MainScene/MainScene.hpp
+        src/audio/AudioEngine/AudioEngine.cpp
+        src/audio/AudioEngine/AudioEngine.hpp
+        src/audio/AudioEngine/Inputs/Inputs.cpp
+        src/audio/AudioEngine/Inputs/Inputs.hpp)
 
 target_link_libraries(ShowTime_0_0_2 sfml-graphics sfml-window sfml-system)
 target_link_libraries(ShowTime_0_0_2 )
