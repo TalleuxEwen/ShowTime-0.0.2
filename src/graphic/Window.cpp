@@ -5,6 +5,7 @@
 #include "Window.hpp"
 #include "../core/Core.hpp"
 #include "../graphic/Scenes/LoadScene/LoadScene.hpp"
+#include "Scenes/MainScene/MainScene.hpp"
 
 #include <utility>
 #include <iostream>
@@ -39,6 +40,7 @@ Window::Window(Core *core, std::string windowName, sf::Vector2u windowSize)
     }
 
     _scenePool["Loading"] = std::make_shared<LoadScene>(_core);
+    _scenePool["Main"] = std::make_shared<MainScene>(_core);
 
     _currentScene = getSceneByName("Loading");
 }
@@ -73,8 +75,10 @@ void Window::handleEvent()
 {
     while (pollEvent())
     {
-        if (_windowEvent.type == sf::Event::Closed)
+        if (_windowEvent.type == sf::Event::Closed) {
             close();
+            return;
+        }
 
         _currentScene->handleEvent(_windowEvent, _renderWindow);
     }

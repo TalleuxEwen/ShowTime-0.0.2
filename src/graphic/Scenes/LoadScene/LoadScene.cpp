@@ -20,7 +20,7 @@ void LoadScene::update()
                 timer->update();
                 if (timer->isFinished()) {
                     timer->stop();
-                    _core->getWindow(0)->changeScene("menu");
+                    _core->getWindow(0)->changeScene("Main");
                 }
             }
         }
@@ -56,5 +56,4 @@ void LoadScene::initScene()
     timer->start();
 
     addComponent(timer);
-
 }

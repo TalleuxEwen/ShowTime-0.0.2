@@ -66,7 +66,7 @@ void VueMeterComponent::setSize(sf::Vector2f size)
         auto sprite = std::dynamic_pointer_cast<SpriteComponent>(component);
         if (sprite) {
             sprite->setSize((sf::Vector2f) {sprite->getSize().x * size.x, sprite->getSize().y * size.y});
-            sprite->setPosition((sf::Vector2f) {sprite->getPosition().x * size.x, sprite->getPosition().y * size.y});
+            sprite->setPosition((sf::Vector2f) {(sprite->getPosition().x - _position.x) * size.x + _position.x, (sprite->getPosition().y - _position.y) * size.y + _position.y});
         }
     }
 }
