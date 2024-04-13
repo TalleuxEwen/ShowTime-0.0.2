@@ -80,10 +80,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14e63188e0aa7c4a6f72d5501384d1f9" id="r_a14e63188e0aa7c4a6f72d5501384d1f9"><td class="memItemLeft" align="right" valign="top"><a id="a14e63188e0aa7c4a6f72d5501384d1f9" name="a14e63188e0aa7c4a6f72d5501384d1f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Core</b> ()</td></tr>
-<tr class="memdesc:a14e63188e0aa7c4a6f72d5501384d1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classCore.html">Core</a>, constructor of <a class="el" href="classCore.html">Core</a>. <br /></td></tr>
-<tr class="separator:a14e63188e0aa7c4a6f72d5501384d1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558fb6ff371ce32d73013915e9bdf3d1" id="r_a558fb6ff371ce32d73013915e9bdf3d1"><td class="memItemLeft" align="right" valign="top"><a id="a558fb6ff371ce32d73013915e9bdf3d1" name="a558fb6ff371ce32d73013915e9bdf3d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Core</b> (std::shared_ptr&lt; <a class="el" href="classAudioEngine.html">AudioEngine</a> &gt; audioEngine)</td></tr>
+<tr class="memdesc:a558fb6ff371ce32d73013915e9bdf3d1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classCore.html">Core</a>, constructor of <a class="el" href="classCore.html">Core</a>. <br /></td></tr>
+<tr class="separator:a558fb6ff371ce32d73013915e9bdf3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5057b209797afa0e0df08fd2be864164" id="r_a5057b209797afa0e0df08fd2be864164"><td class="memItemLeft" align="right" valign="top"><a id="a5057b209797afa0e0df08fd2be864164" name="a5057b209797afa0e0df08fd2be864164"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Core</b> ()=default</td></tr>
 <tr class="memdesc:a5057b209797afa0e0df08fd2be864164"><td class="mdescLeft">&#160;</td><td class="mdescRight">~Core, destructor of <a class="el" href="classCore.html">Core</a> <br /></td></tr>
@@ -104,6 +104,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
 <tr class="memitem:ac586647918b97922f3817bdeccf6942a" id="r_ac586647918b97922f3817bdeccf6942a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classWindow.html">Window</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac586647918b97922f3817bdeccf6942a">getWindows</a> () const</td></tr>
 <tr class="memdesc:ac586647918b97922f3817bdeccf6942a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWindows, get the windows  <br /></td></tr>
 <tr class="separator:ac586647918b97922f3817bdeccf6942a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecc14ae91160ed97ad95ff24461f036" id="r_a1ecc14ae91160ed97ad95ff24461f036"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classAudioEngine.html">AudioEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ecc14ae91160ed97ad95ff24461f036">getAudioEngine</a> () const</td></tr>
+<tr class="memdesc:a1ecc14ae91160ed97ad95ff24461f036"><td class="mdescLeft">&#160;</td><td class="mdescRight">getAudioEngine, get the audio engine  <br /></td></tr>
+<tr class="separator:a1ecc14ae91160ed97ad95ff24461f036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4160e448bc4c6455f4f443574fb73648" name="a4160e448bc4c6455f4f443574fb73648"></a>
@@ -133,6 +136,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1ecc14ae91160ed97ad95ff24461f036" name="a1ecc14ae91160ed97ad95ff24461f036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ecc14ae91160ed97ad95ff24461f036">&#9670;&#160;</a></span>getAudioEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classAudioEngine.html">AudioEngine</a> &gt; Core::getAudioEngine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getAudioEngine, get the audio engine </p>
+<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;AudioEngine&gt; </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCore_a1ecc14ae91160ed97ad95ff24461f036_icgraph.png" border="0" usemap="#aclassCore_a1ecc14ae91160ed97ad95ff24461f036_icgraph" alt=""/></div>
+<map name="aclassCore_a1ecc14ae91160ed97ad95ff24461f036_icgraph" id="aclassCore_a1ecc14ae91160ed97ad95ff24461f036_icgraph">
+<area shape="rect" title="getAudioEngine, get the audio engine" alt="" coords="185,5,329,31"/>
+<area shape="rect" href="classMainScene.html#a17d18e1ea8577b48d04aeb35bb4f40b4" title="update, update the scene" alt="" coords="5,5,137,31"/>
+<area shape="poly" title=" " alt="" coords="169,21,137,21,137,16,169,16"/>
+</map>
+</div>
 
 </div>
 </div>

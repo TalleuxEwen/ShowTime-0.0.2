@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_0',['Window',['../classWindow.html',1,'']]]
+  ['timercomponent_0',['TimerComponent',['../classTimerComponent.html',1,'']]]
 ];

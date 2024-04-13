@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['core_0',['Core',['../classCore.html',1,'']]]
+  ['buffer_0',['Buffer',['../classBuffer.html',1,'']]],
+  ['bufferspool_1',['BuffersPool',['../classBuffersPool.html',1,'']]]
 ];

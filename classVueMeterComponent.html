@@ -133,6 +133,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="memitem:aa430dfac7f4a958c5ef29a14eb73c495" id="r_aa430dfac7f4a958c5ef29a14eb73c495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa430dfac7f4a958c5ef29a14eb73c495">handleEvent</a> (const sf::Event &amp;event, sf::RenderWindow &amp;window, <a class="el" href="classIComponent.html">IComponent</a> *parentComponent) override</td></tr>
 <tr class="memdesc:aa430dfac7f4a958c5ef29a14eb73c495"><td class="mdescLeft">&#160;</td><td class="mdescRight">handleEvent, handle the event  <br /></td></tr>
 <tr class="separator:aa430dfac7f4a958c5ef29a14eb73c495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e7eb34db617b13d47eee6a556a4526" id="r_a61e7eb34db617b13d47eee6a556a4526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61e7eb34db617b13d47eee6a556a4526">setVolumeValues</a> (const float *volume, int size)</td></tr>
+<tr class="memdesc:a61e7eb34db617b13d47eee6a556a4526"><td class="mdescLeft">&#160;</td><td class="mdescRight">setVolumeValues, set the volume  <br /></td></tr>
+<tr class="separator:a61e7eb34db617b13d47eee6a556a4526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7460f60b11c8f13314c915ffa8a59ab3" id="r_a7460f60b11c8f13314c915ffa8a59ab3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7460f60b11c8f13314c915ffa8a59ab3">update</a> () override</td></tr>
+<tr class="memdesc:a7460f60b11c8f13314c915ffa8a59ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">update, update the component  <br /></td></tr>
+<tr class="separator:a7460f60b11c8f13314c915ffa8a59ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37159235ecf230e7efea0ed70b76372" id="r_aa37159235ecf230e7efea0ed70b76372"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37159235ecf230e7efea0ed70b76372">getVolume</a> () const</td></tr>
+<tr class="memdesc:aa37159235ecf230e7efea0ed70b76372"><td class="mdescLeft">&#160;</td><td class="mdescRight">getVolume, get the volume  <br /></td></tr>
+<tr class="separator:aa37159235ecf230e7efea0ed70b76372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classAComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAComponent.html">AComponent</a></td></tr>
 <tr class="memitem:a5e26f0f290ee8ed77704988d82fd45c0 inherit pub_methods_classAComponent" id="r_a5e26f0f290ee8ed77704988d82fd45c0"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>AComponent</b> (<a class="el" href="classCore.html">Core</a> *core)</td></tr>
@@ -142,9 +151,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~AComponent</b> () override=default</td></tr>
 <tr class="memdesc:a73d23cfa76293767476118966d17d4d7 inherit pub_methods_classAComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">~AComponent, destructor of <a class="el" href="classAComponent.html">AComponent</a> <br /></td></tr>
 <tr class="separator:a73d23cfa76293767476118966d17d4d7 inherit pub_methods_classAComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed6e022ff7b1df67afb5af57f2d9936 inherit pub_methods_classAComponent" id="r_aeed6e022ff7b1df67afb5af57f2d9936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAComponent.html#aeed6e022ff7b1df67afb5af57f2d9936">update</a> () override</td></tr>
-<tr class="memdesc:aeed6e022ff7b1df67afb5af57f2d9936 inherit pub_methods_classAComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">update, update the component  <br /></td></tr>
-<tr class="separator:aeed6e022ff7b1df67afb5af57f2d9936 inherit pub_methods_classAComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13a80e57457ba06c07b095b21f1a644 inherit pub_methods_classAComponent" id="r_ac13a80e57457ba06c07b095b21f1a644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAComponent.html#ac13a80e57457ba06c07b095b21f1a644">pause</a> () override</td></tr>
 <tr class="memdesc:ac13a80e57457ba06c07b095b21f1a644 inherit pub_methods_classAComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">pause, pause the component  <br /></td></tr>
 <tr class="separator:ac13a80e57457ba06c07b095b21f1a644 inherit pub_methods_classAComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +193,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="memitem:aeca2e9d8b3e2feae9258e8d73c38ce83 inherit pub_methods_classAComponent" id="r_aeca2e9d8b3e2feae9258e8d73c38ce83"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAComponent.html#aeca2e9d8b3e2feae9258e8d73c38ce83">getWidth</a> () const override</td></tr>
 <tr class="memdesc:aeca2e9d8b3e2feae9258e8d73c38ce83 inherit pub_methods_classAComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWidth, get the width  <br /></td></tr>
 <tr class="separator:aeca2e9d8b3e2feae9258e8d73c38ce83 inherit pub_methods_classAComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9509cfcc01e53ad144f7558c3fb104 inherit pub_methods_classAComponent" id="r_a7a9509cfcc01e53ad144f7558c3fb104"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classIComponent.html">IComponent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAComponent.html#a7a9509cfcc01e53ad144f7558c3fb104">getSubComponentByAttribute</a> (const std::string &amp;attribute) override</td></tr>
+<tr class="memdesc:a7a9509cfcc01e53ad144f7558c3fb104 inherit pub_methods_classAComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSubComponentByAttribute, get a sub component by its attribute  <br /></td></tr>
+<tr class="separator:a7a9509cfcc01e53ad144f7558c3fb104 inherit pub_methods_classAComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIComponent"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classIComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIComponent.html">IComponent</a></td></tr>
 <tr class="memitem:a5bf086670aca6c873104b36550f74d71 inherit pub_methods_classIComponent" id="r_a5bf086670aca6c873104b36550f74d71"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>IComponent</b> (<a class="el" href="classCore.html">Core</a> *core)</td></tr>
@@ -262,6 +271,34 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>_width</b> = 1920</t
 </dl>
 
 <p>Reimplemented from <a class="el" href="classAComponent.html#a1ebf1d006e63d326e57c61715e3a28f3">AComponent</a>.</p>
+
+</div>
+</div>
+<a id="aa37159235ecf230e7efea0ed70b76372" name="aa37159235ecf230e7efea0ed70b76372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37159235ecf230e7efea0ed70b76372">&#9670;&#160;</a></span>getVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float VueMeterComponent::getVolume </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getVolume, get the volume </p>
+<dl class="section return"><dt>Returns</dt><dd>the volume </dd></dl>
 
 </div>
 </div>
@@ -399,6 +436,74 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a61e7eb34db617b13d47eee6a556a4526" name="a61e7eb34db617b13d47eee6a556a4526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e7eb34db617b13d47eee6a556a4526">&#9670;&#160;</a></span>setVolumeValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VueMeterComponent::setVolumeValues </td>
+          <td>(</td>
+          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>volume</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setVolumeValues, set the volume </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7460f60b11c8f13314c915ffa8a59ab3" name="a7460f60b11c8f13314c915ffa8a59ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7460f60b11c8f13314c915ffa8a59ab3">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VueMeterComponent::update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>update, update the component </p>
+
+<p>Reimplemented from <a class="el" href="classAComponent.html#aeed6e022ff7b1df67afb5af57f2d9936">AComponent</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classVueMeterComponent_a7460f60b11c8f13314c915ffa8a59ab3_cgraph.png" border="0" usemap="#aclassVueMeterComponent_a7460f60b11c8f13314c915ffa8a59ab3_cgraph" alt=""/></div>
+<map name="aclassVueMeterComponent_a7460f60b11c8f13314c915ffa8a59ab3_cgraph" id="aclassVueMeterComponent_a7460f60b11c8f13314c915ffa8a59ab3_cgraph">
+<area shape="rect" title="update, update the component" alt="" coords="5,5,155,46"/>
+<area shape="rect" href="classAComponent.html#a7a9509cfcc01e53ad144f7558c3fb104" title="getSubComponentByAttribute, get a sub component by its attribute" alt="" coords="203,5,412,46"/>
+<area shape="poly" title=" " alt="" coords="155,23,187,23,187,28,155,28"/>
+</map>
+</div>
 
 </div>
 </div>

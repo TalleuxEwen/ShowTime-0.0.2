@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mainscene_0',['MainScene',['../classMainScene.html#ab22591204c3590ff4104215aa882b5ff',1,'MainScene']]]
+  ['loadscene_0',['LoadScene',['../classLoadScene.html#a2cd44c3850ceddf26ce228a760005cd1',1,'LoadScene']]]
 ];

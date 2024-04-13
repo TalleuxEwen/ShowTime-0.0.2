@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vuemetercomponent_0',['VueMeterComponent',['../classVueMeterComponent.html',1,'VueMeterComponent'],['../classVueMeterComponent.html#acd2eb00c58d5ba043198567c639ea9f4',1,'VueMeterComponent::VueMeterComponent()']]]
+  ['timercomponent_0',['TimerComponent',['../classTimerComponent.html',1,'TimerComponent'],['../classTimerComponent.html#a9ae72a3b4429c7c1e8157b53a250176d',1,'TimerComponent::TimerComponent()']]]
 ];

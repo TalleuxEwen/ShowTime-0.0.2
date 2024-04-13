@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['changescene_0',['changeScene',['../classWindow.html#a32fd946d1b2b9d7cc18d79d892d3e303',1,'Window']]],
-  ['clear_1',['clear',['../classWindow.html#a38bc43bdd1a97e5de7f346ba4c3957ef',1,'Window']]],
-  ['close_2',['close',['../classWindow.html#a35055c04498121d39741bfcd5082705b',1,'Window']]],
-  ['core_3',['Core',['../classCore.html#a14e63188e0aa7c4a6f72d5501384d1f9',1,'Core']]]
+  ['buffer_0',['Buffer',['../classBuffer.html#a84d067acf25e94e311df5a929d50122f',1,'Buffer']]],
+  ['bufferspool_1',['BuffersPool',['../classBuffersPool.html#a25a0fcaf989901d49f7b074ef7f65726',1,'BuffersPool']]]
 ];

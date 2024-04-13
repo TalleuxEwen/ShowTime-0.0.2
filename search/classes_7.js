@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vuemetercomponent_0',['VueMeterComponent',['../classVueMeterComponent.html',1,'']]]
+  ['spritecomponent_0',['SpriteComponent',['../classSpriteComponent.html',1,'']]]
 ];

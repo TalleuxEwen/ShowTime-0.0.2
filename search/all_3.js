@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['display_0',['display',['../classAComponent.html#a1ebf1d006e63d326e57c61715e3a28f3',1,'AComponent::display()'],['../classIComponent.html#a14c8c65f67a3d82f69835180ccee5c4d',1,'IComponent::display()'],['../classSpriteComponent.html#aea71cee3ad455b6e7080b327e2b041fd',1,'SpriteComponent::display()'],['../classVueMeterComponent.html#a78252c9ceaf49acbf6a6b5e0c06bf899',1,'VueMeterComponent::display()'],['../classAScene.html#a2867fb106de1e86a55b679dacbbfff4b',1,'AScene::display()'],['../classIScene.html#ad396de90d15c0b4ba006e12278fd552c',1,'IScene::display()'],['../classWindow.html#afadfafa5a0b9472554759004aafb327e',1,'Window::display()']]],
-  ['drawscene_1',['drawScene',['../classWindow.html#a372003ab556534d2a13e5f47beaed5f0',1,'Window']]]
+  ['changescene_0',['changeScene',['../classWindow.html#a32fd946d1b2b9d7cc18d79d892d3e303',1,'Window']]],
+  ['clear_1',['clear',['../classWindow.html#a38bc43bdd1a97e5de7f346ba4c3957ef',1,'Window']]],
+  ['close_2',['close',['../classWindow.html#a35055c04498121d39741bfcd5082705b',1,'Window']]],
+  ['core_3',['Core',['../classCore.html',1,'Core'],['../classCore.html#a558fb6ff371ce32d73013915e9bdf3d1',1,'Core::Core()']]]
 ];

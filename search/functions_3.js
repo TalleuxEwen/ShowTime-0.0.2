@@ -1,29 +1,6 @@
 var searchData=
 [
-  ['getattribute_0',['getAttribute',['../classAComponent.html#a88370c50779f351fb6b0e9c763ab6e0f',1,'AComponent::getAttribute()'],['../classIComponent.html#a8266336d619d9c2f3d8871ec25b7a648',1,'IComponent::getAttribute()']]],
-  ['getcomponents_1',['getComponents',['../classAScene.html#ae0fbfe05c09631139853d98fae81e5ef',1,'AScene::getComponents()'],['../classIScene.html#a1dbcfbc383781c554bd9cbb3305df460',1,'IScene::getComponents()']]],
-  ['getcurrentscene_2',['getCurrentScene',['../classWindow.html#add75a8c4f31b9f04ef9e8665b1237365',1,'Window']]],
-  ['getelapsedtime_3',['getElapsedTime',['../classTimerComponent.html#a80a3660058ac02423e40c926fb390abb',1,'TimerComponent']]],
-  ['getheight_4',['getHeight',['../classAComponent.html#a9b2d38236340f8aca3c5a457ef471a63',1,'AComponent::getHeight()'],['../classIComponent.html#a7500b6c2388a91f2f160da736d577dab',1,'IComponent::getHeight()']]],
-  ['getisclicked_5',['getIsClicked',['../classSpriteComponent.html#ada65866bb7f2ae0be463a4ba39b378e6',1,'SpriteComponent']]],
-  ['getposition_6',['getPosition',['../classAComponent.html#a36bc48313a6e19cca9265141b469b6ad',1,'AComponent::getPosition()'],['../classIComponent.html#ac80e4aff7815158db74e813a6d45af99',1,'IComponent::getPosition()']]],
-  ['getrenderwindow_7',['getRenderWindow',['../classWindow.html#aa4cfacff351bb38403a6fa9cdd6f85e5',1,'Window']]],
-  ['getscenebyname_8',['getSceneByName',['../classWindow.html#a3f0e421b2641c91f7813cedd9cfef469',1,'Window']]],
-  ['getscenepool_9',['getScenePool',['../classWindow.html#aa044e7be5a393fad649cf6e5009a1478',1,'Window']]],
-  ['getsize_10',['getSize',['../classAComponent.html#aaf825edf9a23559cf56e6d3b9051fff1',1,'AComponent::getSize()'],['../classIComponent.html#afedd39cd3e5a479b1db179478fd78ec2',1,'IComponent::getSize()']]],
-  ['getsubcomponents_11',['getSubComponents',['../classAComponent.html#abc751c6ebb825ba49ad474465c646016',1,'AComponent::getSubComponents()'],['../classIComponent.html#a3c45af1fdec8d82532c0d815a4920564',1,'IComponent::getSubComponents()']]],
-  ['gettargettime_12',['getTargetTime',['../classTimerComponent.html#a68990b29e950202b8ce1471266bb3cc5',1,'TimerComponent']]],
-  ['gettexture_13',['getTexture',['../classSpriteComponent.html#a63c53f5f3e20ed9f873abac7dd4d0637',1,'SpriteComponent']]],
-  ['getwidth_14',['getWidth',['../classAComponent.html#aeca2e9d8b3e2feae9258e8d73c38ce83',1,'AComponent::getWidth()'],['../classIComponent.html#ac14ae743f45902e8097ad935ec6ed651',1,'IComponent::getWidth()']]],
-  ['getwindow_15',['getWindow',['../classCore.html#a882b1ec6d757b6ca5611dee9c1e174b5',1,'Core']]],
-  ['getwindowevent_16',['getWindowEvent',['../classWindow.html#afef4b1f441489b350241850bec794e10',1,'Window']]],
-  ['getwindowframeratelimit_17',['getWindowFramerateLimit',['../classWindow.html#a24773beb98b2131c55e1c5f71939c19f',1,'Window']]],
-  ['getwindowid_18',['getWindowId',['../classWindow.html#a262fcb08c2947d78462511d6a34a409d',1,'Window']]],
-  ['getwindowmousecursorvisible_19',['getWindowMouseCursorVisible',['../classWindow.html#ac609ae5e940b015e11b04ba858c81ff7',1,'Window']]],
-  ['getwindowmousestyle_20',['getWindowMouseStyle',['../classWindow.html#a18a7e72a97d0ce486e44b42227e80757',1,'Window']]],
-  ['getwindowname_21',['getWindowName',['../classWindow.html#a6edc606df4680a93ed47016204166615',1,'Window']]],
-  ['getwindowposition_22',['getWindowPosition',['../classWindow.html#a0e0ad8fa28071093440a864d07e79163',1,'Window']]],
-  ['getwindows_23',['getWindows',['../classCore.html#ac586647918b97922f3817bdeccf6942a',1,'Core']]],
-  ['getwindowsize_24',['getWindowSize',['../classWindow.html#a5f295ef070e6c024e38b01d6289eec89',1,'Window']]],
-  ['getwindowverticalsyncenabled_25',['getWindowVerticalSyncEnabled',['../classWindow.html#a6b6306582f12133f71b3e8a85d0d224e',1,'Window']]]
+  ['deleteexitoutput_0',['deleteExitOutput',['../classInputs.html#a4f7676e52110f03463d7841c5689376d',1,'Inputs']]],
+  ['display_1',['display',['../classAComponent.html#a1ebf1d006e63d326e57c61715e3a28f3',1,'AComponent::display()'],['../classIComponent.html#a14c8c65f67a3d82f69835180ccee5c4d',1,'IComponent::display()'],['../classSpriteComponent.html#aea71cee3ad455b6e7080b327e2b041fd',1,'SpriteComponent::display()'],['../classVueMeterComponent.html#a78252c9ceaf49acbf6a6b5e0c06bf899',1,'VueMeterComponent::display()'],['../classAScene.html#a2867fb106de1e86a55b679dacbbfff4b',1,'AScene::display()'],['../classIScene.html#ad396de90d15c0b4ba006e12278fd552c',1,'IScene::display()'],['../classWindow.html#afadfafa5a0b9472554759004aafb327e',1,'Window::display()']]],
+  ['drawscene_2',['drawScene',['../classWindow.html#a372003ab556534d2a13e5f47beaed5f0',1,'Window']]]
 ];

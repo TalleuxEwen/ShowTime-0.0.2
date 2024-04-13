@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['icomponent_0',['IComponent',['../classIComponent.html',1,'IComponent'],['../classIComponent.html#a5bf086670aca6c873104b36550f74d71',1,'IComponent::IComponent()']]],
-  ['init_1',['init',['../classVueMeterComponent.html#ae98bbd1651f86284f049947c78e36f5c',1,'VueMeterComponent']]],
-  ['initscene_2',['initScene',['../classLoadScene.html#a2a1876b067797d0d0c57353c7041d575',1,'LoadScene::initScene()'],['../classMainScene.html#a17cb38777d39b7efd8709004cdda71b5',1,'MainScene::initScene()']]],
-  ['iscene_3',['IScene',['../classIScene.html',1,'IScene'],['../classIScene.html#a70cbf2f63093439fea5789573157a184',1,'IScene::IScene()']]],
-  ['isfinished_4',['isFinished',['../classTimerComponent.html#a4696deb9c8758f190a1bba5aee341094',1,'TimerComponent']]],
-  ['isopen_5',['isOpen',['../classWindow.html#a761d614931fb5a5daa70e4f580c3e78e',1,'Window']]]
+  ['handleevent_0',['handleEvent',['../classAComponent.html#a0494cd6b0200e429c59793af271b89e3',1,'AComponent::handleEvent()'],['../classIComponent.html#a928103ed35ee9149f1973dd5e9634b3e',1,'IComponent::handleEvent()'],['../classSpriteComponent.html#aa567e8234c65124674bf9fc817b3b584',1,'SpriteComponent::handleEvent()'],['../classVueMeterComponent.html#aa430dfac7f4a958c5ef29a14eb73c495',1,'VueMeterComponent::handleEvent()'],['../classAScene.html#aab5a94e8b5bcd40da771d9150c3e87e4',1,'AScene::handleEvent()'],['../classIScene.html#af708ad60661734da757a6483e73e3a94',1,'IScene::handleEvent()'],['../classLoadScene.html#a6514015a4ca9b541a41aaa56240a3945',1,'LoadScene::handleEvent()'],['../classMainScene.html#aed19ad870acd28e337ccb3fe32c205f7',1,'MainScene::handleEvent()'],['../classWindow.html#ae048164a23c55ef8b0d3da0704ccadb4',1,'Window::handleEvent()']]]
 ];

@@ -1,0 +1,5 @@
+<map id="BuffersPool::getOutputBuffer" name="BuffersPool::getOutputBuffer">
+<area shape="rect" id="Node000001" title="getOutputBuffer, get an output buffer" alt="" coords="5,5,191,31"/>
+<area shape="rect" id="Node000002" href="$classBuffersPool.html#a9c2306ed991edf3db84be45f8b580aac" title="addOutputBuffer, add an output buffer" alt="" coords="239,5,427,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,16,223,16,223,21,191,21"/>
+</map>

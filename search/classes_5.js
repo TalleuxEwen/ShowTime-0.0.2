@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spritecomponent_0',['SpriteComponent',['../classSpriteComponent.html',1,'']]]
+  ['mainscene_0',['MainScene',['../classMainScene.html',1,'']]]
 ];
