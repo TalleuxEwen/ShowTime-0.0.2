@@ -1,29 +1,29 @@
 //
-// Created by talleux on 4/10/24.
+// Created by talleux on 4/12/24.
 //
 
 #pragma once
 
 #include <pulse/simple.h>
 #include <string>
-#include <iostream>
 #include <mutex>
 #include <memory>
 #include "../BuffersPool.hpp"
 
-class Inputs
+class Outputs
 {
     public:
         /**
-         * @brief Construct a new Inputs object
+         * @brief Construct a new Outputs object
          *
          */
-        Inputs(std::string deviceName, int numDevice, std::shared_ptr<BuffersPool> buffersPool, int numChannels = 2, int sampleRate = 44100, int bufferSize = 1024);
-/**
-         * @brief Destroy the Inputs object
+        Outputs(std::string  deviceName, int numDevice, std::shared_ptr<BuffersPool> buffersPool, int numChannels = 2, int sampleRate = 44100, int bufferSize = 1024);
+
+        /**
+         * @brief Destroy the Outputs object
          *
          */
-        ~Inputs();
+        ~Outputs();
 
         /**
          * @brief setSampleSpec, set the sample spec
@@ -34,8 +34,8 @@ class Inputs
         void setSampleSpec(int sampleRate, int numChannels);
 
         /**
-         * @brief isReady, check if the input is ready
-         * @return true if the input is ready, false otherwise
+         * @brief isReady, check if the output is ready
+         * @return true if the output is ready, false otherwise
          */
         bool isReady() const { return _isReady; }
 
@@ -46,20 +46,15 @@ class Inputs
         pa_simple *getSimple() { return _simple; }
 
         /**
-         * @brief run, run the input
+         * @brief run, run the output
+         * @param buffer, the buffer
          */
         void run(std::shared_ptr<Buffer> buffer);
 
         /**
-         * @brief stop, stop the input
+         * @brief stop, stop the output
          */
         void stop() { _isReady = false; }
-
-        /**
-         * @brief getSoundLevel, get the sound level
-         * @return the sound level
-         */
-        float getSoundLevel() { return _soundLevel; }
 
         /**
          * @brief setSoundLevel, set the sound level
@@ -68,16 +63,16 @@ class Inputs
         void setSoundLevel(float soundLevel) { _soundLevel = soundLevel; }
 
         /**
-         * @brief addExitOutput, add an exit output
-         * @param output, the output
+         * @brief getSoundLevel, get the sound level
+         * @return the sound level
          */
-        void addExitOutput(std::string output) { _exitOutputs.push_back(output); }
+        float getSoundLevel() { return _soundLevel; }
 
         /**
-         * @brief deleteExitOutput, delete an exit output
-         * @param output, the output
+         * @brief addInputToBroadcast, add an input to broadcast
+         * @param input, the input
          */
-        void deleteExitOutput(std::string output);
+        void addInputToBroadcast(const std::string &input) { _inputsToBroadcast.push_back(input); }
 
     private:
         /**
@@ -96,24 +91,19 @@ class Inputs
         int _numDevice;
 
         /**
-         * @brief _bufferSize, the buffer size
-         */
-        int _bufferSize;
-
-        /**
-         * @brief _isReady, the state of the input
-         */
-        bool _isReady = false;
-
-        /**
          * @brief _simple, the pulse audio simple
          */
         pa_simple *_simple;
 
         /**
-         * @brief _id, the id
+         * @brief _bufferSize, the buffer size
          */
-        int _id;
+        int _bufferSize;
+
+        /**
+         * @brief _isReady, the state of the output
+         */
+        bool _isReady = false;
 
         /**
          * @brief _soundLevel, the sound level
@@ -126,8 +116,9 @@ class Inputs
         std::shared_ptr<BuffersPool> _buffersPool;
 
         /**
-         * @brief exitOutputs, exit the outputs
+         * @brief _inputsToBroadcast, the inputs to broadcast
          */
-        std::vector<std::string> _exitOutputs;
+        std::vector<std::string> _inputsToBroadcast;
+
 
 };

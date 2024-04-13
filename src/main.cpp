@@ -8,13 +8,15 @@
 
 #include "core/Core.hpp"
 #include "audio/AudioEngine/Inputs/Inputs.hpp"
+#include "audio/AudioEngine/Outputs/Outputs.hpp"
+#include "audio/AudioEngine/AudioEngine.hpp"
 
 int main() {
-    Core core;
+    std::shared_ptr<BuffersPool> buffersPool = std::make_shared<BuffersPool>();
 
-    Inputs inputs("ShowTime", 1);
-    Inputs inputs2("ShowTime", 2);
-    Inputs inputs3("ShowTime", 3);
+    AudioEngine audioEngine(buffersPool);
+
+    Core core(std::make_shared<AudioEngine>(audioEngine));
 
     while (!core.getWindows().empty())
     {

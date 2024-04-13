@@ -4,7 +4,8 @@
 
 #include "Core.hpp"
 
-Core::Core()
+Core::Core(std::shared_ptr<AudioEngine> audioEngine)
+    : _audioEngine(std::move(audioEngine))
 {
     _windows.push_back(std::make_shared<Window>(this, "ShowTime 0.0.2", sf::Vector2u(1920, 1080)));
 
@@ -71,4 +72,9 @@ void Core::removeWindow(unsigned int windowId)
 std::vector<std::shared_ptr<Window>> Core::getWindows() const
 {
     return _windows;
+}
+
+std::shared_ptr<AudioEngine> Core::getAudioEngine() const
+{
+    return _audioEngine;
 }

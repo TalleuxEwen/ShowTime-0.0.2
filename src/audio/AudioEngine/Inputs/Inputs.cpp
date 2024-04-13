@@ -3,6 +3,7 @@
 //
 
 #include "Inputs.hpp"
+#include "../AudioEngine.hpp"
 
 #include <utility>
 #include <algorithm>
@@ -23,12 +24,13 @@ bool exec(const char* cmd, std::string &result)
     return false;
 }
 
-Inputs::Inputs(std::string deviceName, int numDevice, int numChannels, int sampleRate, int bufferSize)
+Inputs::Inputs(std::string deviceName, int numDevice, std::shared_ptr<BuffersPool> buffersPool, int numChannels, int sampleRate, int bufferSize)
 {
     setSampleSpec(sampleRate, numChannels);
     _deviceName = std::move(deviceName);
     _numDevice = numDevice;
     _bufferSize = bufferSize;
+    _buffersPool = std::move(buffersPool);
 
     std::string nameToShowInput = _deviceName + "_Virtual_Input";
     std::replace(nameToShowInput.begin(), nameToShowInput.end(), ' ', '_');
@@ -83,7 +85,49 @@ void Inputs::setSampleSpec(int sampleRate, int numChannels)
 {
     _sampleSpec.rate = sampleRate;
     _sampleSpec.channels = numChannels;
-    _sampleSpec.format = PA_SAMPLE_S16LE;
+    _sampleSpec.format = PA_SAMPLE_FLOAT32LE;
+}
+
+void Inputs::run(std::shared_ptr<Buffer> buffer)
+{
+    while (_isReady)
+    {
+        auto *tmpBuffer = (float *)malloc(_bufferSize * sizeof(float));
+        buffer->getMutex()->lock();
+        if (pa_simple_read(_simple, tmpBuffer, _bufferSize * sizeof(float), nullptr) < 0)
+        {
+            fprintf(stderr, "Échec de la lecture de l'entrée virtuelle %d\n", _numDevice);
+            buffer->getMutex()->unlock();
+            return;
+        }
+
+        for (int i = 0; i < _bufferSize; i++)
+            tmpBuffer[i] *= _soundLevel;
+
+
+        for (int i = 0; i < _bufferSize; i++) {
+            buffer->getBuffer()[i] = tmpBuffer[i];
+        }
+
+        buffer->setUpdated(true);
+
+        /*for (auto &output : _exitOutputs)
+        {
+            auto outputBuffer = _buffersPool->getOutputBuffer(output, _bufferSize);
+            //outputBuffer->getMutex()->lock();
+            outputBuffer->setBuffer(buffer->getBuffer());
+            outputBuffer->setUpdated(true);
+            //outputBuffer->getMutex()->unlock();
+        }*/
+
+        free(tmpBuffer);
+        //buffer->getMutex()->unlock();
+    }
+}
+
+void Inputs::deleteExitOutput(std::string output)
+{
+    _exitOutputs.erase(std::remove(_exitOutputs.begin(), _exitOutputs.end(), output), _exitOutputs.end());
 }
 
 

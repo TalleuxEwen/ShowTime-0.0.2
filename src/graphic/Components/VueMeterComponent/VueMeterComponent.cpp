@@ -16,7 +16,7 @@ void VueMeterComponent::init()
     setPosition(0, 0);
     auto vue = std::make_shared<SpriteComponent>(_core);
     sf::Texture texture;
-    if (!texture.loadFromFile("assets/vue_meter/vue_meter.jpg"))
+    if (!texture.loadFromFile("../assets/vue_meter/vue_meter.jpg"))
         throw std::runtime_error("Cannot load file assets/vue_meter/vue_meter.png");
     vue->setTexture(texture);
     vue->setPosition(_position.x + 0, _position.y + 0);
@@ -26,7 +26,7 @@ void VueMeterComponent::init()
     setHeight((float)texture.getSize().y * vue->getSize().y);
 
     sf::Texture texture2;
-    if (!texture2.loadFromFile("assets/vue_meter/fader_button.png"))
+    if (!texture2.loadFromFile("../assets/vue_meter/fader_button.png"))
         throw std::runtime_error("Cannot load file assets/vue_meter/fader_button.png");
     auto fader = std::make_shared<SpriteComponent>(_core);
     fader->setTexture(texture2);
@@ -36,7 +36,7 @@ void VueMeterComponent::init()
     fader->setAttribute("fader");
 
     sf::Texture texture3;
-    if (!texture3.loadFromFile("assets/vue_meter/black.jpg"))
+    if (!texture3.loadFromFile("../assets/vue_meter/black.jpg"))
         throw std::runtime_error("Cannot load file assets/vue_meter/black.jpg");
     auto black = std::make_shared<SpriteComponent>(_core);
     black->setTexture(texture3);
@@ -123,11 +123,13 @@ void VueMeterComponent::update()
     auto black = AComponent::getSubComponentByAttribute("blackLeft");
     auto black2 = AComponent::getSubComponentByAttribute("blackRight");
     auto vue = AComponent::getSubComponentByAttribute("vue");
+    auto fader = AComponent::getSubComponentByAttribute("fader");
 
-    if (black && black2 && vue) {
+    if (black && black2 && vue && fader) {
         auto blackSprite = std::dynamic_pointer_cast<SpriteComponent>(black);
         auto blackSprite2 = std::dynamic_pointer_cast<SpriteComponent>(black2);
         auto vueSprite = std::dynamic_pointer_cast<SpriteComponent>(vue);
+        auto faderSprite = std::dynamic_pointer_cast<SpriteComponent>(fader);
 
         float width = vueSprite->getSize().x * (float)vueSprite->getTexture().getSize().x;
         float height = vueSprite->getSize().y * (float)vueSprite->getTexture().getSize().y;
@@ -149,6 +151,11 @@ void VueMeterComponent::update()
         blackSprite->setSize(calculateRatio(_leftVolumeValue, blackSprite));
         blackSprite2->setSize(calculateRatio(_rightVolumeValue, blackSprite2));
 
+        auto faderPosition = faderSprite->getPosition();
+        auto vuePosition = vueSprite->getPosition();
+
+        //volume is a float between 0 and 1, 0 is the bottom, 1 is the top
+        _volume = std::abs((((faderPosition.y + ((float)faderSprite->getTexture().getSize().y * faderSprite->getSize().y) / 2) - vuePosition.y) / height) - 1);
     }
 }
 

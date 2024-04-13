@@ -68,8 +68,19 @@ class VueMeterComponent : public AComponent
          */
         void update() override;
 
+        /**
+         * @brief getVolume, get the volume
+         * @return the volume
+         */
+        float getVolume() const { return _volume; }
+
     private:
         float _leftVolumeValue = 10;
         float _rightVolumeValue = 50;
+
+        /**
+         * @brief _volume, the volume
+         */
+        float _volume = 0;
 
 };

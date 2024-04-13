@@ -7,6 +7,7 @@
 #include <memory>
 #include <vector>
 #include "../graphic/Window.hpp"
+#include "../audio/AudioEngine/AudioEngine.hpp"
 
 class Core
 {
@@ -15,7 +16,7 @@ class Core
         /**
          * @brief Core, constructor of Core
          */
-        Core();
+        explicit Core(std::shared_ptr<AudioEngine> audioEngine);
 
         /**
          * @brief ~Core, destructor of Core
@@ -57,10 +58,22 @@ class Core
          */
         std::vector<std::shared_ptr<Window>> getWindows() const;
 
+        /**
+         * @brief getAudioEngine, get the audio engine
+         *
+         * @return std::shared_ptr<AudioEngine>
+         */
+        std::shared_ptr<AudioEngine> getAudioEngine() const;
+
     private:
 
             /**
             * @brief _socket, windows pool
             */
             std::vector<std::shared_ptr<Window>> _windows;
+
+            /**
+             * @brief _audioEngine, audio engine
+             */
+            std::shared_ptr<AudioEngine> _audioEngine;
 };

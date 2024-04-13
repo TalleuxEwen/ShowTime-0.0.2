@@ -45,7 +45,13 @@ add_executable(ShowTime_0_0_2
         src/audio/AudioEngine/AudioEngine.cpp
         src/audio/AudioEngine/AudioEngine.hpp
         src/audio/AudioEngine/Inputs/Inputs.cpp
-        src/audio/AudioEngine/Inputs/Inputs.hpp)
+        src/audio/AudioEngine/Inputs/Inputs.hpp
+        src/audio/AudioEngine/Outputs/Outputs.cpp
+        src/audio/AudioEngine/Outputs/Outputs.hpp
+        src/audio/AudioEngine/BuffersPool.cpp
+        src/audio/AudioEngine/BuffersPool.hpp
+        src/audio/AudioEngine/Buffer.cpp
+        src/audio/AudioEngine/Buffer.hpp)
 
 target_link_libraries(ShowTime_0_0_2 sfml-graphics sfml-window sfml-system)
 target_link_libraries(ShowTime_0_0_2 )

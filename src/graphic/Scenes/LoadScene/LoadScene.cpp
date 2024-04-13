@@ -36,7 +36,7 @@ void LoadScene::initScene()
 {
     auto logo = std::make_shared<SpriteComponent>(_core);
     sf::Texture texture;
-    if (!texture.loadFromFile("assets/logo.png"))
+    if (!texture.loadFromFile("../assets/logo.png"))
         throw std::runtime_error("Cannot load file assets/logo.png");
     else {
         logo->setAttribute("logo");
